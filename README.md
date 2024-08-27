@@ -1,4 +1,4 @@
-# Temple Website
+# Temple Website 🛕🚩🛕
 
 The Temple Website is a project aimed to provide a serene and informative online space for devotees and visitors. This site serves as a digital gateway to the temple, offering insights into its history, upcoming events, and the cultural significance of the temple. Built with React, it ensures a smooth and engaging user experience.
 
