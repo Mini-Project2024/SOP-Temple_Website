@@ -42,10 +42,8 @@ This is a team project, and we are grateful for the contributions of all team me
 
 
 
-Thank you for your hard work and dedication in making Exam-Duty-Scheduler a reality!
+Thank you for your hard work and dedication in creating this website!
 
 ## Contact
 
 For questions, suggestions, or feedback, please contact any of the members.
-
-<mark>Thank you for using Exam Duty Scheduler! We hope this platform enhances your user experience.</mark>
