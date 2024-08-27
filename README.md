@@ -14,11 +14,11 @@ To install the Temple Website, follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Mini-Project2024/SOP.git
+git clone https://github.com/Mini-Project2024/SOP-Temple_Website.git
 ```
 2. Change to the project directory:
 ```bash
-cd SOP
+cd SOP-Temple_Website
 ```
 3. Install the dependencies:
 ```bash
