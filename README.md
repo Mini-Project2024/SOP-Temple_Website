@@ -41,9 +41,6 @@ This is a team project, and we are grateful for the contributions of all team me
 </a>
 
 
-
-Thank you for your hard work and dedication in creating this website!
-
 ## Contact
 
 For questions, suggestions, or feedback, please contact any of the members.
