@@ -1,12 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import "../App.css";
+
+// Register ScrollTrigger with GSAP
+gsap.registerPlugin(ScrollTrigger);
 
 const HistoryPage = ({ id }) => {
   const sectionsRef = useRef([]);
 
   useEffect(() => {
-    // Animate the left-side divs to come from the left and right-side divs from the right
+    // Animate sections on scroll
     sectionsRef.current.forEach((section, index) => {
       const leftDiv = section.querySelector('.left-div');
       const rightDiv = section.querySelector('.right-div');
@@ -14,13 +18,35 @@ const HistoryPage = ({ id }) => {
       gsap.fromTo(
         leftDiv,
         { opacity: 0, x: -100 },
-        { opacity: 1, x: 0, duration: 1, ease: "power3.out", delay: index * 0.6 }
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: section,
+            start: "top bottom", // Animation starts when the top of the section hits the bottom of the viewport
+            end: "bottom top",  // Animation ends when the bottom of the section hits the top of the viewport
+            scrub: 1, // Smoothly animate as you scroll
+          },
+        }
       );
 
       gsap.fromTo(
         rightDiv,
         { opacity: 0, x: 100 },
-        { opacity: 1, x: 0, duration: 1, ease: "power3.out", delay: index * 0.6 + 0.3 }
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: section,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1,
+          },
+        }
       );
     });
   }, []);
