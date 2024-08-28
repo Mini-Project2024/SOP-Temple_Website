@@ -5,6 +5,7 @@ const HistoryPage = ({ id }) => {
     <div id={id} className="history-section">
       <h2>ಇತಿಹಾಸ</h2>
       <p>Content about history goes here.</p>
+    
     </div>
   )
 }
