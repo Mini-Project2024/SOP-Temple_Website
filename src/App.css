@@ -22,3 +22,32 @@
 .nav-item.active::after {
   width: 100%;
 }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+.slide-in {
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-in.visible {
+  transform: translateX(0);
+}
+
+/* App.css */
+.opacity-0 {
+  opacity: 0;
+}
+
+.transform {
+  transform: translateY(12px);
+}
+
+
