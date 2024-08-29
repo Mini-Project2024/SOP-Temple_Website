@@ -50,6 +50,7 @@
   transform: translateY(12px);
 }
 
+/* Landing page  */
 .nav-pattern {
   background-image: url(./assets/header-pattern.svg);
   background-repeat: repeat-x;
@@ -61,3 +62,5 @@
   background-size: contain;
   opacity: 0.5;
 }
+
+
