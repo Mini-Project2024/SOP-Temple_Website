@@ -109,3 +109,13 @@
   color: #f6961d; /* Optional: match the text color with the border */
   padding: 10px; /* Optional: for better spacing */
 }
+.flower-pattern{
+  background-image: url(/src/assets/flower-pattern.svg);
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  left: 0;
+  padding: 17px;
+  background-size: contain;
+  opacity: 0.5;
+}
