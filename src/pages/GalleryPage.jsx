@@ -2,7 +2,7 @@ import React from 'react'
 
 const GalleryPage = ({ id }) => {
   return (
-    <div id={id}>GalleryPage</div>
+    <div id={id} className='h-[100vh]'>GalleryPage</div>
   )
 }
 

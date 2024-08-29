@@ -17,8 +17,16 @@ const Header = () => {
   };
 
   return (
-    <div className="flex items-center justify-between px-8 py-4 bg-yellow-300 relative z-50">
-      <h3 className="text-xl md:text-xl font-bold">
+    <div
+      className="flex items-center justify-between px-8 py-6 fixed w-full z-50"
+      style={{
+        background: "linear-gradient(90deg, rgba(253, 190, 87, 1) 0%, rgba(252, 187, 88, 1) 10%, rgba(244, 119, 40, 1) 40%, rgba(244, 119, 40, 1) 100%)",
+        borderBottomLeftRadius: "30px",
+        borderBottomRightRadius: "30px",
+      }}
+    >
+      <div className="nav-pattern"></div>
+      <h3 className="text-xl md:text-xl  font-bold">
         ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ದೇವಸ್ಥಾನ
       </h3>
 
@@ -26,24 +34,24 @@ const Header = () => {
         <nav>
           <ul className="flex gap-10 font-bold">
             <li
-              className={`nav-item cursor-pointer ${
-                activeIndex === 0 ? "text-blue-500" : ""
+              className={`nav-item text-white cursor-pointer ${
+                activeIndex === 0 ? "text-blue-900" : ""
               }`}
               onClick={() => handleClick(0, "history")}
             >
               ಇತಿಹಾಸ
             </li>
             <li
-              className={`nav-item cursor-pointer ${
-                activeIndex === 2 ? "text-blue-500" : ""
+              className={`nav-item text-white cursor-pointer ${
+                activeIndex === 2 ? "text-blue-900" : ""
               }`}
               onClick={() => handleClick(2, "gallery")}
             >
               ಗ್ಯಾಲರಿ
             </li>
             <li
-              className={`nav-item cursor-pointer ${
-                activeIndex === 3 ? "text-blue-500" : ""
+              className={`nav-item text-white cursor-pointer ${
+                activeIndex === 3 ? "text-blue-900" : ""
               }`}
               onClick={() => handleClick(3, "contact")}
             >
@@ -70,24 +78,24 @@ const Header = () => {
       >
         <ul className="flex flex-col gap-10 p-8 font-bold h-full">
           <li
-            className={`nav-item cursor-pointer ${
-              activeIndex === 0 ? "text-blue-500" : ""
+            className={`nav-item cursor-pointer text-white ${
+              activeIndex === 0 ? "text-blue-900" : ""
             }`}
             onClick={() => handleClick(0, "history")}
           >
             ಇತಿಹಾಸ
           </li>
           <li
-            className={`nav-item cursor-pointer ${
-              activeIndex === 2 ? "text-blue-500" : ""
+            className={`nav-item cursor-pointer text-white ${
+              activeIndex === 2 ? "text-blue-900" : ""
             }`}
             onClick={() => handleClick(2, "gallery")}
           >
             ಗ್ಯಾಲರಿ
           </li>
           <li
-            className={`nav-item cursor-pointer ${
-              activeIndex === 3 ? "text-blue-500" : ""
+            className={`nav-item cursor-pointer text-white ${
+              activeIndex === 3 ? "text-blue-900" : ""
             }`}
             onClick={() => handleClick(3, "contact")}
           >

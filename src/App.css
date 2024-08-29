@@ -1,5 +1,5 @@
-@import '../node_modules/slick-carousel/slick/slick.css';
-@import '../node_modules/slick-carousel/slick/slick-theme.css';
+@import "../node_modules/slick-carousel/slick/slick.css";
+@import "../node_modules/slick-carousel/slick/slick-theme.css";
 .nav-item {
   position: relative;
   display: inline-block;
@@ -14,7 +14,7 @@
   bottom: 0;
   height: 2px;
   width: 0;
-  background-color: #E85C0D;
+  background-color: darkblue;
   transition: width 0.3s ease;
 }
 
@@ -48,6 +48,19 @@
 
 .transform {
   transform: translateY(12px);
+}
+
+/* Landing page  */
+.nav-pattern {
+  background-image: url(./assets/header-pattern.svg);
+  background-repeat: repeat-x;
+  height: 18px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  opacity: 0.5;
 }
 
 
