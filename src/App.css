@@ -109,3 +109,27 @@
   color: #f6961d; /* Optional: match the text color with the border */
   padding: 10px; /* Optional: for better spacing */
 }
+
+.devi{
+  background-image: url('src/images/devi1.png');
+}
+
+.chakra{
+  background-image: url('src/images/chakra.svg');
+}
+
+.left-toran{
+  background-image: url('src/images/Toran-left.svg');
+}
+
+.right-toran{
+  background-image: url('src/images/Toran-right.svg');
+}
+
+.base{
+  background-image: url('src/images/base.svg');
+}
+
+.aasan{
+  background-image: url('src/images/aasan.svg');
+}
