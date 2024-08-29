@@ -78,6 +78,17 @@ const LandingPage = () => {
           backgroundRepeat: "no-repeat",
         }}
       ></div>
+
+      {/* Devi Pic */}
+      <div
+        className="absolute bottom-0 left-[38.5%] h-[360px] w-[360px] z-10"
+        style={{
+            backgroundImage: "url('/src/images/devi1.png')",
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+        }}
+      >
+      </div>
     </div>
   );
 };

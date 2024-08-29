@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html, body {
+    overflow-x: hidden; /* Hide horizontal scroll */
+    overflow-y: auto;   /* Allow vertical scroll if necessary */
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Ensure the root element takes up the full viewport height */
+  #root {
+    height: 100%;
+    margin: 0;
+  }
