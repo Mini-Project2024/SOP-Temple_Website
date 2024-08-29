@@ -6,13 +6,13 @@ const LandingPage = () => {
       {/* Left Toran */}
       <div
         className="absolute top-[75px] left-0 h-[450px] w-[50vw] bg-no-repeat bg-left bg-contain md:h-[350px] sm:h-[250px] xs:h-[250px]"
-        style={{ backgroundImage: "url('src/assets/Toran-left.svg')" }}
+        style={{ backgroundImage: "url('src/images/Toran-left.svg')" }}
       ></div>
 
       {/* Right Toran */}
       <div
         className="absolute top-[75px] right-0 h-[450px] w-[50vw] bg-no-repeat bg-right bg-contain md:h-[350px] sm:h-[250px] xs:h-[250px]"
-        style={{ backgroundImage: "url('src/assets/Toran-right.svg')" }}
+        style={{ backgroundImage: "url('src/images/Toran-right.svg')" }}
       ></div>
 
       {/* Chakra */}
@@ -22,7 +22,7 @@ const LandingPage = () => {
                     md:h-24 md:w-24 xs:h-20 xs:w-20
                    "
         style={{
-          backgroundImage: "url('/src/assets/chakra.svg')",
+          backgroundImage: "url('/src/images/chakra.svg')",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
         }}
@@ -33,7 +33,7 @@ const LandingPage = () => {
                     md:h-24 md:w-24 xs:h-20 xs:w-20
                   "
         style={{
-          backgroundImage: "url('src/assets/chakra.svg')",
+          backgroundImage: "url('src/images/chakra.svg')",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
         }}
@@ -41,7 +41,7 @@ const LandingPage = () => {
       <div
         className="absolute top-0 left-[-50px] h-36 w-36 opacity-40 animate-spin-slow xs:h-32 xs:w-32"
         style={{
-          backgroundImage: "url('src/assets/chakra.svg')",
+          backgroundImage: "url('src/images/chakra.svg')",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
         }}
@@ -49,7 +49,7 @@ const LandingPage = () => {
       <div
         className="absolute top-0 right-[-50px] h-36 w-36 opacity-40 animate-spin-slow xs:h-32 xs:w-32"
         style={{
-          backgroundImage: "url('src/assets/chakra.svg')",
+          backgroundImage: "url('src/images/chakra.svg')",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
         }}
@@ -59,7 +59,7 @@ const LandingPage = () => {
       <div
         className="absolute bottom-0 w-full h-24"
         style={{
-          backgroundImage: "url('src/assets/base.svg')",
+          backgroundImage: "url('src/images/base.svg')",
           backgroundSize: "contain",
         }}
       ></div>
@@ -70,7 +70,7 @@ const LandingPage = () => {
                     xs:w-[300px] xs:h-[120px] md:w-[500px] md:h-[200px]
                   "
         style={{
-          backgroundImage: "url('src/assets/aasan.svg')",
+          backgroundImage: "url('src/images/aasan.svg')",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
         }}
@@ -84,7 +84,7 @@ const LandingPage = () => {
                   "
         style={{
           //   margin: "0 auto",
-          backgroundImage: "url('src/assets/chakra.svg')",
+          backgroundImage: "url('src/images/chakra.svg')",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
         }}
