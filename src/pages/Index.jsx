@@ -4,11 +4,13 @@ import images from "../images/images"
 import HistoryPage from './HistoryPage'
 import GalleryPage from './GalleryPage'
 import ContactPage from './ContactPage'
+import LandingPage from './LandingPage'
+import Header from '../components/Header'
 
 const Index = () => {
   return (
     <div>
-      <SliderPage>
+      {/* <SliderPage>
         {images.map((image, index) => (
           <img 
             className='w-full h-60 object-cover' 
@@ -17,8 +19,9 @@ const Index = () => {
             alt={image.imgAlt} 
           />
         ))}
-      </SliderPage>
-
+      </SliderPage> */}
+      <Header/>
+      <LandingPage/>
       <HistoryPage id="history" />
       <GalleryPage id="gallery" />
       <ContactPage id="contact" />
