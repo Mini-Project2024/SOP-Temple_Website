@@ -6,6 +6,7 @@ import GalleryPage from './GalleryPage'
 import ContactPage from './ContactPage'
 import LandingPage from './LandingPage'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const Index = () => {
   return (
@@ -25,6 +26,7 @@ const Index = () => {
       <HistoryPage id="history" />
       <GalleryPage id="gallery" />
       <ContactPage id="contact" />
+      <Footer/>
     </div>
   )
 }

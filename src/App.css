@@ -62,5 +62,50 @@
   background-size: contain;
   opacity: 0.5;
 }
+.foot-main{
+  position: relative;
+}
+.foot-pattern {
+  background-image: url(/src/assets/footer-pattern.svg);
+  background-repeat: repeat-x;
+  height: 18px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: contain;
+  opacity: 0.5;
+}
+.yt{
+  background-image: url(/src/assets/yt.svg);
+}
+.insta{
+  background-image: url(/src/assets/insta.svg);
+}
+.fb{
+  background-image: url(/src/assets/fb.svg);
 
-
+}
+.yt, .insta , .fb{
+  filter: invert(52%) sepia(76%) saturate(528%) hue-rotate(0deg) brightness(101%) contrast(102%);
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 18px;
+  padding: 15px;
+  margin: 5px;
+  cursor: pointer;
+  /* box-shadow: 0 0 10px #FFF; */
+}
+.yt:hover,
+.insta:hover,
+.fb:hover{
+  scale: 1.1;
+  transition: .4s;
+  
+}
+.orange-border{
+  background: #781102;
+  border-top: 1px solid #f6961d;
+  color: #f6961d; /* Optional: match the text color with the border */
+  padding: 10px; /* Optional: for better spacing */
+}
