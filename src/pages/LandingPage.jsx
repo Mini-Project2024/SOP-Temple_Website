@@ -5,13 +5,13 @@ const LandingPage = () => {
     <div className="h-[100vh] w-[100vw] bg-[#fcf0d8] relative">
       {/* Left Toran */}
       <div
-        className="absolute top-[75px] left-0 h-[400px] w-[50vw] bg-no-repeat bg-left bg-contain"
+        className="absolute top-[75px] left-0 h-[450px] w-[50vw] bg-no-repeat bg-left bg-contain"
         style={{ backgroundImage: "url('/src/assets/Toran-left.svg')" }}
       ></div>
 
       {/* Right Toran */}
       <div
-        className="absolute top-[75px] right-0 h-[400px] w-[50vw] bg-no-repeat bg-right bg-contain"
+        className="absolute top-[75px] right-0 h-[450px] w-[50vw] bg-no-repeat bg-right bg-contain"
         style={{ backgroundImage: "url('/src/assets/Toran-right.svg')" }}
       ></div>
 
@@ -60,7 +60,7 @@ const LandingPage = () => {
 
       {/* Aasan */}
       <div
-        className="absolute left-[50%] bottom-[80px] w-[470px] h-52 transform -translate-x-1/2"
+        className="absolute left-[53%] bottom-[95px] w-[700px] h-[240px] transform -translate-x-1/2"
         style={{
           backgroundImage: "url('/src/assets/aasan.svg')",
           backgroundSize: "contain",
@@ -70,7 +70,7 @@ const LandingPage = () => {
 
       {/* Middle Chakra */}
       <div
-        className="absolute animate-spin-slow bottom-[210px] left-[45%] h-40 w-40"
+        className="absolute animate-spin-slow bottom-[250px] left-[670px] h-44 w-44"
         style={{
         //   margin: "0 auto",
           backgroundImage: "url('/src/assets/chakra.svg')",
@@ -81,7 +81,7 @@ const LandingPage = () => {
 
       {/* Devi Pic */}
       <div
-        className="absolute bottom-0 left-[38.5%] h-[360px] w-[360px] z-10"
+        className="absolute bottom-0 left-[36.5%] h-[400px] w-[400px] z-10"
         style={{
             backgroundImage: "url('/src/images/devi1.png')",
             backgroundSize: "contain",
