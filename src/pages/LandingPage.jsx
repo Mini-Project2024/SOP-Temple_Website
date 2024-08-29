@@ -70,7 +70,7 @@ const LandingPage = () => {
 
       {/* Middle Chakra */}
       <div
-        className="absolute animate-spin-slow bottom-[250px] left-[670px] h-44 w-44"
+        className="absolute animate-spin-slow bottom-[260px] left-[660px] h-48 w-48"
         style={{
         //   margin: "0 auto",
           backgroundImage: "url('/src/assets/chakra.svg')",
@@ -81,7 +81,7 @@ const LandingPage = () => {
 
       {/* Devi Pic */}
       <div
-        className="absolute bottom-0 left-[36.5%] h-[400px] w-[400px] z-10"
+        className="absolute bottom-0 left-[36.2%] h-[400px] w-[400px] z-10"
         style={{
             backgroundImage: "url('/src/images/devi1.png')",
             backgroundSize: "contain",
