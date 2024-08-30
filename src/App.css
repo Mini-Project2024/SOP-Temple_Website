@@ -120,3 +120,14 @@
   /* opacity: 0.5; */
 }
 
+.chakra{
+  background-image: url(/src/images/chakra.svg);
+}
+
+.base{
+  background-image: url(/src/images/base.svg);
+}
+
+.aasan{
+  background-image: url(/src/images/aasan.svg);
+}
