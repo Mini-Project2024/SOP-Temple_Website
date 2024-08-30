@@ -72,8 +72,8 @@ const LandingPage = () => {
 
       {/* Aasan */}
       <div
-        className="absolute aasan left-[53%] bottom-[95px] w-[700px] h-[240px] transform -translate-x-1/2
-            xs:h-[200px] xs:w-[400px] xs:bottom-[62px] xs:left-1/2 md:left-1/2 md:w-[700px] md:h-[240px] md:bottom-[95px]
+        className="absolute aasan md:left-[53%] bottom-[95px] w-[700px] h-[240px] transform -translate-x-1/2
+            xs:h-[200px] xs:w-[400px] xs:bottom-[62px] xs:left-1/2  md:w-[700px] md:h-[240px] md:bottom-[95px]
             
         "
         style={{
@@ -84,7 +84,7 @@ const LandingPage = () => {
 
       {/* Middle Chakra */}
       <div
-        className="absolute chakra animate-spin-slow md:bottom-[250px] md:left-[40.1%] md:h-48 md:w-48
+        className="absolute chakra animate-spin-slow md:bottom-[250px] md:left-[43%] md:h-48 md:w-48
             xs:h-36 xs:w-36 xs:bottom-[200px] xs:left-[32%]
         "
         style={{
@@ -95,7 +95,7 @@ const LandingPage = () => {
 
       {/* Devi Pic */}
       <div
-        className="absolute md:bottom-0 md:left-[33.5%] md:h-[400px] md:w-[400px] z-10 animate-slideInUp
+        className="absolute md:bottom-0 md:left-[36.5%] md:h-[400px] md:w-[400px] z-10 animate-slideInUp
           xs:h-[250px] xs:w-[250px] xs:bottom-8 xs:left-[19.5%]
         "
         style={{
