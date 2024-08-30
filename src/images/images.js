@@ -1,6 +1,7 @@
 import deviPic from './deviPic.jpg';
 import devi1 from './devi1.png';
 import deviJPG from './devi.JPG';
+import Chakra from './chakra.svg'
 
 const images = [
   {
@@ -13,6 +14,10 @@ const images = [
   },
   {
     imgURL: deviPic,
+    imgAlt: "img-3"
+  },
+  {
+    imgURL: Chakra,
     imgAlt: "img-3"
   }
 ];
