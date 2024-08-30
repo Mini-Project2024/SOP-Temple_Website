@@ -95,7 +95,7 @@ const LandingPage = () => {
       {/* Devi Pic */}
       <div
         className="absolute bottom-0 left-[36.2%] h-[400px] w-[400px] z-10
-          xs:h-[250px] xs:w-[250px] xs:bottom-8 xs:left-[20%] md:left-[37.5%]
+          xs:h-[250px] xs:w-[250px] xs:bottom-8 xs:left-[19.5%] md:left-[37.5%]
         "
         style={{
           backgroundImage: `url(${devi})`,
