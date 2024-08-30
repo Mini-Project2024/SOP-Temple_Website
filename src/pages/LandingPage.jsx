@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../App.css"
 // Import images
 import devi from "../images/devi1.png";
 import toranLeft from "../images/Toran-left.svg";
@@ -10,7 +10,7 @@ const LandingPage = () => {
     <div className="h-[100vh] w-[100vw] bg-[#fcf0d8] relative">
       {/* Left Toran */}
       <div
-        className="absolute top-[75px] left-0 h-[450px] w-[50vw] bg-no-repeat bg-left bg-contain md:h-[350px] sm:h-[250px] xs:h-[250px]"
+        className="absolute top-[75px] left-0 md:h-[450px] w-[50vw] bg-no-repeat bg-left bg-contain sm:h-[250px] xs:h-[250px] animate-slideInLeft"
         style={{
           backgroundImage: `url(${toranLeft})`,
         }}
@@ -18,7 +18,7 @@ const LandingPage = () => {
 
       {/* Right Toran */}
       <div
-        className="absolute top-[75px] right-0 h-[450px] w-[50vw] bg-no-repeat bg-right bg-contain md:h-[350px] sm:h-[250px] xs:h-[250px]"
+        className="absolute top-[75px] right-0 md:h-[450px] w-[50vw] bg-no-repeat bg-right bg-contain sm:h-[250px] xs:h-[250px] animate-slideInRight"
         style={{
           backgroundImage: `url(${toranRight})`,
         }}
@@ -26,7 +26,7 @@ const LandingPage = () => {
 
       {/* Chakra */}
       <div
-        className="absolute chakra top-[40%] left-[20%] h-28 w-28 opacity-30 animate-spin-slow
+        className="absolute chakra md:top-[40%] md:left-[20%] md:h-28 md:w-28 opacity-30 animate-spin-slow
             xs:left-[10%] xs:h-20 xs:w-20 xs:top-[45%]
         "
         style={{
@@ -35,7 +35,7 @@ const LandingPage = () => {
         }}
       ></div>
       <div
-        className="absolute chakra top-[20%] right-[20%] h-28 w-28 opacity-30 animate-spin-slow
+        className="absolute chakra md:top-[20%] md:right-[20%] md:h-28 md:w-28 opacity-30 animate-spin-slow
             xs:right-[10%] xs:h-20 xs:w-20 xs:top-[30%]
         "
         style={{
@@ -73,7 +73,8 @@ const LandingPage = () => {
       {/* Aasan */}
       <div
         className="absolute aasan left-[53%] bottom-[95px] w-[700px] h-[240px] transform -translate-x-1/2
-            xs:h-[200px] xs:w-[400px] xs:bottom-[62px] xs:left-1/2
+            xs:h-[200px] xs:w-[400px] xs:bottom-[62px] xs:left-1/2 md:left-1/2 md:w-[700px] md:h-[240px] md:bottom-[95px]
+            
         "
         style={{
           backgroundSize: "contain",
@@ -83,8 +84,8 @@ const LandingPage = () => {
 
       {/* Middle Chakra */}
       <div
-        className="absolute chakra animate-spin-slow bottom-[260px] left-[43%] h-48 w-48
-            xs:h-36 xs:w-36 xs:bottom-[200px] xs:left-[32%] md:left-[43%]
+        className="absolute chakra animate-spin-slow md:bottom-[250px] md:left-[40.1%] md:h-48 md:w-48
+            xs:h-36 xs:w-36 xs:bottom-[200px] xs:left-[32%]
         "
         style={{
           backgroundSize: "contain",
@@ -94,8 +95,8 @@ const LandingPage = () => {
 
       {/* Devi Pic */}
       <div
-        className="absolute bottom-0 left-[36.2%] h-[400px] w-[400px] z-10
-          xs:h-[250px] xs:w-[250px] xs:bottom-8 xs:left-[19.5%] md:left-[37.5%]
+        className="absolute md:bottom-0 md:left-[33.5%] md:h-[400px] md:w-[400px] z-10 animate-slideInUp
+          xs:h-[250px] xs:w-[250px] xs:bottom-8 xs:left-[19.5%]
         "
         style={{
           backgroundImage: `url(${devi})`,

@@ -75,7 +75,11 @@ const Header = () => {
         className={`fixed top-0 right-0 transform transition-transform duration-300 ease-in-out z-40 md:hidden ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
-        style={{ width: "100vw", backgroundColor: "rgba(255, 222, 77, 1)" }}
+        style={{ 
+            width: "100vw",
+            top: "55px",
+            background: "linear-gradient(90deg, rgba(253, 190, 87, 1) 0%, rgba(252, 187, 88, 1) 10%, rgba(244, 119, 40, 1) 40%, rgba(244, 119, 40, 1) 100%)",
+         }}
       >
         <ul className="flex flex-col gap-10 p-8 font-bold h-full">
           <li

@@ -7,10 +7,27 @@ export default {
   theme: {
     extend: {
       animation: {
-        'spin-slow': 'spin 10s linear infinite', // Adjust '10s' to your preferred duration
+        'spin-slow': 'spin 10s linear infinite', // Slow spin animation
+        'slideInLeft': 'slideInLeft 1.5s ease-in-out', // Slide in from left
+        'slideInRight': 'slideInRight 1.5s ease-in-out', // Slide in from right
+        'slideInUp': 'slideInUp 1.5s ease-in-out', // Slide in from bottom
+      },
+      keyframes: {
+        slideInLeft: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideInRight: {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideInUp: {
+          '0%': { transform: 'translateY(100%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
       },
       screens: {
-        xs: '360px', // or whatever size you need
+        xs: '360px', // Custom screen size
       },
     },
   },
