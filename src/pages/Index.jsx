@@ -11,6 +11,8 @@ import Footer from '../components/Footer'
 const Index = () => {
   return (
     <div>
+      <Header/>
+      <LandingPage/>
       {/* <SliderPage>
         {images.map((image, index) => (
           <img 
@@ -21,8 +23,6 @@ const Index = () => {
           />
         ))}
       </SliderPage> */}
-      <Header/>
-      <LandingPage/>
       <HistoryPage id="history" />
       <GalleryPage id="gallery" />
       <ContactPage id="contact" />

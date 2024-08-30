@@ -27,7 +27,7 @@ const Header = () => {
       }}
     >
       <div className="nav-pattern"></div>
-      <h3 className="text-xl md:text-xl  font-bold">
+      <h3 className="text-xl md:text-xl  font-bold text-white">
         ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ದೇವಸ್ಥಾನ
       </h3>
 

@@ -1,13 +1,22 @@
 import React from "react";
-import "../App.css"
+import "../App.css";
 // Import images
 import devi from "../images/devi1.png";
 import toranLeft from "../images/Toran-left.svg";
 import toranRight from "../images/Toran-right.svg";
+import diya from "../images/diya.gif";
 
 const LandingPage = () => {
   return (
-    <div className="h-[100vh] w-[100vw] bg-[#fcf0d8] relative">
+    <div
+      className="h-[100vh] w-[100vw] bg-[#fcf0d8] relative"
+      // style={{
+      //   backgroundImage: `url(${bgTemple})`,
+      //   backgroundRepeat: "no-repeat",
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      // }}
+    >
       {/* Left Toran */}
       <div
         className="absolute top-[75px] left-0 md:h-[450px] w-[50vw] bg-no-repeat bg-left bg-contain sm:h-[250px] xs:h-[250px] animate-slideInLeft"
@@ -24,6 +33,29 @@ const LandingPage = () => {
         }}
       ></div>
 
+      <div
+        className="absolute md:top-[77px] md:left-[25%] h-48 w-full z-30"
+        style={{
+          backgroundImage: `url(${diya})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
+
+        }}
+      ></div>
+
+      <div className="absolute top-[77px] right-[25%] h-full w-full z-30">
+        <div
+          className="h-48 w-full"
+          style={{
+            backgroundImage: `url(${diya})`,
+            backgroundRepeat: "no-repeat",
+            // backgroundPosition: "center",
+            backgroundSize: "contain",
+            transform: "rotate(180deg) scaleY(-1)", // Flip vertically for reflection effect
+          }}
+        ></div>
+      </div>
+
       {/* Chakra */}
       <div
         className="absolute chakra md:top-[40%] md:left-[20%] md:h-28 md:w-28 opacity-30 animate-spin-slow
@@ -35,7 +67,7 @@ const LandingPage = () => {
         }}
       ></div>
       <div
-        className="absolute chakra md:top-[20%] md:right-[20%] md:h-28 md:w-28 opacity-30 animate-spin-slow
+        className="absolute chakra md:top-[40%] md:right-[20%] md:h-28 md:w-28 opacity-30 animate-spin-slow
             xs:right-[10%] xs:h-20 xs:w-20 xs:top-[30%]
         "
         style={{
@@ -44,7 +76,7 @@ const LandingPage = () => {
         }}
       ></div>
       <div
-        className="absolute chakra top-0 left-[-50px] h-36 w-36 opacity-40 animate-spin-slow
+        className="absolute chakra top-0 left-[-50px] md:h-40 md:w-40 opacity-40 animate-spin-slow
             xs:h-32 xs:w-32
         "
         style={{
@@ -53,7 +85,7 @@ const LandingPage = () => {
         }}
       ></div>
       <div
-        className="absolute chakra top-0 right-[-50px] h-36 w-36 opacity-40 animate-spin-slow
+        className="absolute chakra top-0 right-[-50px] md:h-40 md:w-40 opacity-40 animate-spin-slow
             xs:h-32 xs:w-32
         "
         style={{
@@ -95,7 +127,7 @@ const LandingPage = () => {
 
       {/* Devi Pic */}
       <div
-        className="absolute md:bottom-0 md:left-[36.5%] md:h-[400px] md:w-[400px] z-10 animate-slideInUp
+        className="absolute md:bottom-5 md:left-[36.5%] md:h-[400px] md:w-[400px] z-10 animate-slideInUp
           xs:h-[250px] xs:w-[250px] xs:bottom-8 xs:left-[19.5%]
         "
         style={{

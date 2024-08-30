@@ -15,10 +15,6 @@ const images = [
   {
     imgURL: deviPic,
     imgAlt: "img-3"
-  },
-  {
-    imgURL: Chakra,
-    imgAlt: "img-3"
   }
 ];
 
