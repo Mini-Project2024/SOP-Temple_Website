@@ -34,7 +34,7 @@ const LandingPage = () => {
       ></div>
 
       <div
-        className="absolute md:top-[77px] md:left-[25%] h-48 w-full z-30"
+        className="absolute md:top-[77px] md:left-[25%] xs:w-0 h-48 md:w-full z-30"
         style={{
           backgroundImage: `url(${diya})`,
           backgroundRepeat: "no-repeat",
@@ -43,7 +43,7 @@ const LandingPage = () => {
         }}
       ></div>
 
-      <div className="absolute top-[77px] right-[25%] h-full w-full z-30">
+      <div className="absolute top-[77px] right-[25%] xs:w-0 h-full md:w-full z-30">
         <div
           className="h-48 w-full"
           style={{
