@@ -46,13 +46,21 @@ const Header = () => {
               className={`nav-item text-white cursor-pointer ${
                 activeIndex === 2 ? "text-blue-900" : ""
               }`}
+              onClick={() => handleClick(2, "events")}
+            >
+            ಕಾರ್ಯಕ್ರಮಗಳು            
+            </li>
+            <li
+              className={`nav-item text-white cursor-pointer ${
+                activeIndex === 3 ? "text-blue-900" : ""
+              }`}
               onClick={() => handleClick(2, "gallery")}
             >
               ಗ್ಯಾಲರಿ
             </li>
             <li
               className={`nav-item text-white cursor-pointer ${
-                activeIndex === 3 ? "text-blue-900" : ""
+                activeIndex === 4 ? "text-blue-900" : ""
               }`}
               onClick={() => handleClick(3, "contact")}
             >
@@ -100,9 +108,17 @@ const Header = () => {
           </li>
           <li
             className={`nav-item cursor-pointer text-white ${
+              activeIndex === 2 ? "text-blue-900" : ""
+            }`}
+            onClick={() => handleClick(3, "events")}
+          >
+            ಕಾರ್ಯಕ್ರಮಗಳು 
+          </li>
+          <li
+            className={`nav-item cursor-pointer text-white ${
               activeIndex === 3 ? "text-blue-900" : ""
             }`}
-            onClick={() => handleClick(3, "contact")}
+            onClick={() => handleClick(4, "contact")}
           >
             ಸಂಪರ್ಕಿಸಿ
           </li>
