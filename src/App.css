@@ -170,7 +170,8 @@
   background-image: url(./images/header-pattern.svg);
   background-repeat: repeat-x;
   height: 18px;
-  width: 100%;  
+  width: 100%; 
+  margin: 0; 
   left: 0;
   background-size: contain;
   opacity: 0.5;
