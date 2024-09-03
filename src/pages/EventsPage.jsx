@@ -91,7 +91,7 @@ const TempleEvent = ({ id }) => {
                  <div className="absolute top-[80px] left-[730px] md:h-[300px] w-[50vw] bg-no-repeat bg-left bg-contain sm:h-[250px] xs:h-[250px] animate-slideInLeft" style={{ 
                      backgroundImage : `url(${Mandir})`,transform: "rotate(180deg) scaleY(-1)", } }></div>
                 <div className="w-screen overflow-hidden relative min-h-[600px] z-30"> {/* Adjusted z-index */}
-                    <h2 className="text-4xl mb-5 text-gray-800">ಕಾರ್ಯಕ್ರಮಗಳು</h2>
+                    <h2 className="text-4xl font-bold mb-5 text-gray-800">ಕಾರ್ಯಕ್ರಮಗಳು</h2>
 
                     <div
                         className="flex transition-transform duration-500 ease-in-out"

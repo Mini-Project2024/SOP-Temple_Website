@@ -8,6 +8,7 @@ import LandingPage from './LandingPage'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Events from './EventsPage'
+import ManagementPage from './ManagementPage'
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
       </SliderPage> */}
       <HistoryPage id="history" />
       <Events id="events"/>
+      <ManagementPage id="management"/>
       <GalleryPage id="gallery" />
       <ContactPage id="contact" />
       <Footer/>
