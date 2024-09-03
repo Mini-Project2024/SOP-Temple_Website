@@ -45,7 +45,7 @@ const Footer = () => {
         </a>
       </div>
       <div
-        className="text-orange-400 font-sans px-6 py-1 orange-border  "
+        className="text-orange-400 font-sans px-6 py-1 orange-border text-center  "
         style={{
           background: "#781102",
         }}

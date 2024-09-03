@@ -229,3 +229,22 @@
 .feature:hover {
   transform: translateY(-10px); 
 } */
+
+.map-div{
+
+}
+
+/* contact page media queryyyyyyyyyyyy */
+@media  (max-width:450px) {
+  #contact{
+    flex-direction: column;
+  }
+
+  .forms{
+    width: 100%;
+    padding: 0;
+  }
+  .right{
+    margin: 0.1rem;
+}
+}
