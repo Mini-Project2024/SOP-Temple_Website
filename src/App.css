@@ -166,6 +166,7 @@
 }
 
 /* Events page */
+
 .top-pattern {
   background-image: url(./images/header-pattern.svg);
   background-repeat: repeat-x;
@@ -176,75 +177,138 @@
   background-size: contain;
   opacity: 0.5;
 }
-/* .events-page {
-  padding: 50px 0;
-  background-color: #f9f9f9;
-  text-align: center;
-  overflow: hidden;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.section-description {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-  color: #666;
-}
-
-.event-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.feature {
-  flex: 1;
-  margin: 20px;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out; 
-}
-.feature h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #007bff;
-}
-
-.feature p {
-  font-size: 1rem;
-  color: #444;
-}
-
-.feature:hover {
-  transform: translateY(-10px); 
-} */
-
-.map-div{
-
-}
-
-/* contact page media queryyyyyyyyyyyy */
-@media  (max-width:450px) {
-  #contact{
-    flex-direction: column;
+/* Custom responsive styles */
+@media (max-width: 1024px) {
+  .events-section {
+      padding: 3rem 1rem;
+  }
+  .events-section h2 {
+      font-size: 2.5rem;
+  }
+  .events-section .box {
+      width: 50%;
+  }
+  .absolute.left-0.md\:h-\[300px\].w-\[50vw\] {
+      top: 60px;
+      height: 200px;
+      width: 50vw;
+  }
+  .absolute.left-\[730px\].md\:h-\[300px\].w-\[50vw\] {
+      top: 60px;
+      height: 200px;
+      left: 50vw;
+      transform: rotate(180deg) scaleY(-1);
+  }
+  h3.text-xl{
+    font-size: 16px;
   }
 
-  .forms{
-    width: 100%;
-    padding: 0;
+  .text-gray-700.group-hover\:text-gray-300{
+    font-size: 12px;
   }
-  .right{
-    margin: 0.1rem;
+  .h-12.w-12.mb-2{
+    height: 20px;
+    width: 20px;
+  }
 }
+
+@media (max-width: 780px) {
+  .events-section h2 {
+      font-size: 2rem;
+  }
+  .events-section .box {
+      width: 100%;
+  }
+  .w-screen {
+      padding: 0 1rem;
+  }
+  .absolute.left-0.md\:h-\[300px\].w-\[50vw\] {
+      top: 40px;
+      height: 150px;
+  }
+  .absolute.left-\[730px\].md\:h-\[300px\].w-\[50vw\] {
+      top: 40px;
+      height: 150px;
+  }
+  .absolute.top-\[80px\].left-0.md\:h-\[300px\].w-\[50vw\].bg-no-repeat.bg-left.bg-contain.sm\:h-\[250px\].xs\:h-\[250px\].animate-slideInLeft{
+    top: 55px;
+    height: 400px;
+    width: 450px;
+    
+  }
+  .absolute.top-\[80px\].left-\[730px\].md\:h-\[300px\].w-\[50vw\].bg-no-repeat.bg-left.bg-contain.sm\:h-\[250px\].xs\:h-\[250px\].animate-slideInLeft{
+    top: 55px;
+    height: 400px;
+    width: 450px;
+  }
+}
+
+@media (max-width: 640px) {
+  .events-section h2 {
+      font-size: 1.75rem;
+  }
+  .events-section .box {
+      width: 100%;
+      padding: 1rem;
+  }
+  .w-screen {
+      padding: 0 0.5rem;
+  }
+  .absolute.left-0.md\:h-\[300px\].w-\[50vw\] {
+      top: 20px;
+      height: 100px;
+  }
+  .absolute.left-\[730px\].md\:h-\[300px\].w-\[50vw\] {
+      top: 20px;
+      height: 100px;
+  }
+  h3.text-xl{
+    font-size: 20px;
+  }
+
+  .text-gray-700.group-hover\:text-gray-300{
+    font-size:12px;
+  }
+  .h-12.w-12.mb-2{
+    height: 30px;
+    width: 30px;
+  }
+  .absolute.top-\[80px\].left-0.md\:h-\[300px\].w-\[50vw\].bg-no-repeat.bg-left.bg-contain.sm\:h-\[250px\].xs\:h-\[250px\].animate-slideInLeft{
+    top: 0;
+    left: 15px;
+    height: 362px;
+    width: 550px;
+  }
+  .absolute.top-\[80px\].left-\[730px\].md\:h-\[300px\].w-\[50vw\].bg-no-repeat.bg-left.bg-contain.sm\:h-\[250px\].xs\:h-\[250px\].animate-slideInLeft{
+    display: none;
+
+  }
+
+}
+
+@media (max-width: 480px) {
+  .events-section h2 {
+      font-size: 1.5rem;
+  }
+  .events-section .box {
+      padding: 0.5rem;
+  }
+  h3.text-xl{
+    font-size: 25px;
+  }
+
+  .text-gray-700.group-hover\:text-gray-300{
+    font-size:15px;
+  }
+  .h-12.w-12.mb-2{
+    height: 30px;
+    width: 30px;
+  }
+  .absolute.top-\[80px\].left-0.md\:h-\[300px\].w-\[50vw\].bg-no-repeat.bg-left.bg-contain.sm\:h-\[250px\].xs\:h-\[250px\].animate-slideInLeft{
+    top: 80px;
+    left: 0px;
+    height: 380px;
+    width: 400px;
+  }
 }

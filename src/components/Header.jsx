@@ -46,7 +46,7 @@ const Header = () => {
               className={`nav-item text-white cursor-pointer ${
                 activeIndex === 2 ? "text-blue-900" : ""
               }`}
-              onClick={() => handleClick(2, "events")}
+              onClick={() => handleClick(1, "events")}
             >
             ಕಾರ್ಯಕ್ರಮಗಳು            
             </li>
@@ -54,7 +54,15 @@ const Header = () => {
               className={`nav-item text-white cursor-pointer ${
                 activeIndex === 3 ? "text-blue-900" : ""
               }`}
-              onClick={() => handleClick(2, "gallery")}
+              onClick={() => handleClick(2, "management")}
+            >
+              ಆಡಳಿತ ಮಂಡಲಿ
+            </li>
+            <li
+              className={`nav-item text-white cursor-pointer ${
+                activeIndex === 3 ? "text-blue-900" : ""
+              }`}
+              onClick={() => handleClick(3, "gallery")}
             >
               ಗ್ಯಾಲರಿ
             </li>
@@ -62,7 +70,7 @@ const Header = () => {
               className={`nav-item text-white cursor-pointer ${
                 activeIndex === 4 ? "text-blue-900" : ""
               }`}
-              onClick={() => handleClick(3, "contact")}
+              onClick={() => handleClick(4, "contact")}
             >
               ಸಂಪರ್ಕಿಸಿ
             </li>
@@ -100,7 +108,7 @@ const Header = () => {
           </li>
           <li
             className={`nav-item cursor-pointer text-white ${
-              activeIndex === 2 ? "text-blue-900" : ""
+              activeIndex === 1 ? "text-blue-900" : ""
             }`}
             onClick={() => handleClick(2, "gallery")}
           >
@@ -117,6 +125,14 @@ const Header = () => {
           <li
             className={`nav-item cursor-pointer text-white ${
               activeIndex === 3 ? "text-blue-900" : ""
+            }`}
+            onClick={() => handleClick(3, "management")}
+          >
+            ಆಡಳಿತ ಮಂಡಲಿ 
+          </li>
+          <li
+            className={`nav-item cursor-pointer text-white ${
+              activeIndex === 4 ? "text-blue-900" : ""
             }`}
             onClick={() => handleClick(4, "contact")}
           >
