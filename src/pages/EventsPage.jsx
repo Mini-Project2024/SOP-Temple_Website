@@ -20,12 +20,12 @@ const TempleEvent = ({ id }) => {
             let newSlideAmount;
             if (window.innerWidth <= 480) {
                 newVisibleFeatures = 1;
-                newSlideAmount = 14.4; // Slide 100% for one item
+                newSlideAmount = 14.3; // Slide 100% for one item
             } 
             else if (window.innerWidth <= 640) {
                 newVisibleFeatures = 2;
                 newSlideAmount = 14.4; // Slide 50% for two items
-            } else if (window.innerWidth <= 780) {
+            } else if (window.innerWidth <= 1024) {
                 newVisibleFeatures = 3;
                 newSlideAmount = 14.4; // Slide 33.33% for three items
             } else {
