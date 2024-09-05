@@ -64,6 +64,9 @@
 }
 .foot-main{
   position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .foot-pattern {
   background-image: url(/src/images/footer-pattern.svg);
@@ -117,9 +120,13 @@
   left: 0;
   padding: 17px;
   background-size: contain;
-  /* opacity: 0.5; */
+  position:absolute;
+  top: 0;
+  opacity: 0.5;
 }
-
+.ct-main{
+  position: relative;
+}
 .chakra{
   background-image: url(/src/images/chakra.svg);
 }
@@ -256,7 +263,20 @@ display: none;
     width: 100%;
   }
 }
+/* contact page media queryyyyyyyyyyyy */
+@media  (max-width:450px) {
+  #contact{
+    flex-direction: column;
+  }
 
+  .forms{
+    width: 100%;
+    padding: 0;
+  }
+  .right{
+    margin: 0.1rem;
+}
+}
 @media (max-width: 640px) {
   .events-section h2 {
       font-size: 1.75rem;

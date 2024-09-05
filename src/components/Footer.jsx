@@ -6,16 +6,9 @@ import fb from "../assets/fb.svg";
 import insta from "../assets/insta.svg";
 const Footer = () => {
   return (
-    //     <div
-    //     className="flex items-center justify-between px-8 py-6 fixed w-full z-50"
-    //     style={{
-    //       background: "linear-gradient(90deg, rgba(253, 190, 87, 1) 0%, rgba(252, 187, 88, 1) 10%, rgba(244, 119, 40, 1) 40%, rgba(244, 119, 40, 1) 100%)",
-    //       borderTopLeftRadius: "30px",
-    //       borderTopRightRadius: "30px",
-    //     }}
-    //   >
+
     <div
-      className="flex flex-col justify-center items-center px-8 py-6 w-full z-50 foot-main"
+      className="flex flex-col justify-center items-center b px-8 py-6 w-full z-50 foot-main"
       style={{
         background: "#781102",
         //   borderTopLeftRadius: "30px",
