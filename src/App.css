@@ -310,3 +310,9 @@ display: none;
   }
 
 }
+.image1{
+  width:550px;
+  height:450px;
+  gap: 10px;
+  padding: 15px;
+}
