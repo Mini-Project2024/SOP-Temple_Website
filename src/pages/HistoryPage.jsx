@@ -35,11 +35,11 @@ const HistoryPage = ({ id }) => {
         <div className="flex justify-center align-center">
           <div>
           <img src={oldphoto} className="image1" alt="old photo" />
-          <p className="text-center text-xl font-bold text-red-900 mt-4">ಪುರಾತನ ಕ್ಷೇತ್ರ</p> 
+          <p className="text-center text-xl font-bold text-red-900 mt-3">ಪುರಾತನ ಕ್ಷೇತ್ರ</p> 
           </div>
           <div>
           <img src={moola} className="image1" alt="" />
-          <p className="text-center text-xl font-bold text-red-900 mt-4">
+          <p className="text-center text-xl font-bold text-red-900 mt-3">
           ಬಾಚಕೆರೆ ಮೂಲ ಸಾನಿಧ್ಯ</p> 
           </div>
         
