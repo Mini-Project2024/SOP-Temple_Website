@@ -15,7 +15,10 @@ const Index = () => {
     <div>
       <Header/>
       <LandingPage/>
-      {/* <SliderPage>
+      <HistoryPage id="history" />
+      <Events id="events"/>
+      <ManagementPage id="management"/>
+      <SliderPage id="gallery">
         {images.map((image, index) => (
           <img 
             className='w-full h-60 object-cover' 
@@ -24,11 +27,8 @@ const Index = () => {
             alt={image.imgAlt} 
           />
         ))}
-      </SliderPage> */}
-      <HistoryPage id="history" />
-      <Events id="events"/>
-      <ManagementPage id="management"/>
-      <GalleryPage id="gallery" />
+      </SliderPage>
+      {/* <GalleryPage id="gallery" /> */}
       <ContactPage id="contact" />
       <Footer/>
     </div>
