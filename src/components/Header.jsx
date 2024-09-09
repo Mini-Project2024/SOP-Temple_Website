@@ -36,7 +36,7 @@ const Header = () => {
           <ul className="flex gap-10 font-bold">
             <li
               className={`nav-item text-white cursor-pointer ${
-                activeIndex === 0 ? "text-blue-900" : ""
+                activeIndex === 1 ? "text-blue-900" : ""
               }`}
               onClick={() => handleClick(0, "history")}
             >
@@ -44,7 +44,7 @@ const Header = () => {
             </li>
             <li
               className={`nav-item text-white cursor-pointer ${
-                activeIndex === 2 ? "text-blue-900" : ""
+                activeIndex === 1 ? "text-blue-900" : ""
               }`}
               onClick={() => handleClick(1, "events")}
             >
@@ -52,7 +52,7 @@ const Header = () => {
             </li>
             <li
               className={`nav-item text-white cursor-pointer ${
-                activeIndex === 3 ? "text-blue-900" : ""
+                activeIndex === 2 ? "text-blue-900" : ""
               }`}
               onClick={() => handleClick(2, "management")}
             >
