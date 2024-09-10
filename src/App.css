@@ -330,9 +330,36 @@ display: none;
   }
 
 }
+/* History page */
+
 .image1{
   width:550px;
   height:450px;
   gap: 10px;
   padding: 15px;
+}
+
+@media (max-width: 480px){
+  .p-10.leading-30.text-justify.text-red-900.font-serif.font-semibold{
+    padding: 0;
+    margin-top: 10px;
+  }
+  .w-full.h-full.flex.p-10.px-50.py-50.bg-orange-100{
+    padding: 0.5;
+  }
+  .image1{
+    height: 150px;
+  }
+  .left.px-50.py-50.h-full.w-full.flex.flex-col.align-center.justify-center.mx-20.my-20{
+      padding-left: 0;
+      padding-top: 0;
+      width: 60%;
+  }
+  .flex.flex-row.bg-orange-100.w-full.h-full.px-50.py-50.ct-main{
+    padding: 0;
+ 
+  }
+  iframe{
+    width: 120%;
+  }
 }
