@@ -1,11 +1,10 @@
-
 import React, { useState, useEffect } from "react";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 import "../css/slider.css";
 
-function SliderPage({ children }) {
+function SliderPage({ id, children }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [slideDone, setSlideDone] = useState(true);
   const [timeID, setTimeID] = useState(null);
@@ -24,7 +23,7 @@ function SliderPage({ children }) {
 
   const slideNext = () => {
     setActiveIndex((val) => {
-      if (val >= children.length - 1) {
+      if (val >= React.Children.count(children) - 1) {
         return 0;
       } else {
         return val + 1;
@@ -35,7 +34,7 @@ function SliderPage({ children }) {
   const slidePrev = () => {
     setActiveIndex((val) => {
       if (val <= 0) {
-        return children.length - 1;
+        return React.Children.count(children) - 1;
       } else {
         return val - 1;
       }
@@ -55,40 +54,62 @@ function SliderPage({ children }) {
     }
   };
 
+  const renderSliderItem = (item, index) => {
+    if (!React.isValidElement(item)) {
+      console.error(`Invalid item at index ${index}:`, item);
+      return null;
+    }
+  
+    const isVideo = item.props.src.toLowerCase().endsWith('.mp4');
+    
+    return (
+      <div
+        className={`slider__item slider__item-active-${activeIndex + 1}`}
+        key={index}
+      >
+        {isVideo ? (
+          <video
+            className="w-auto h-auto max-w-[90%] max-h-[90%] object-contain"
+            src={item.props.src}
+            alt={item.props.alt}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        ) : (
+          React.cloneElement(item, {
+            className: "w-auto h-auto max-w-[90%] max-h-[90%] object-contain"
+          })
+        )}
+      </div>
+    );
+  };
+
   return (
     <div
+      id={id}
       className="container__slider"
       onMouseEnter={AutoPlayStop}
       onMouseLeave={AutoPlayStart}
     >
-      {children.map((item, index) => {
-        return (
-          <div
-            className={"slider__item slider__item-active-" + (activeIndex + 1)}
-            key={index}
-          >
-            {item}
-          </div>
-        );
-      })}
+      {React.Children.map(children, (child, index) => renderSliderItem(child, index))}
 
       <div className="container__slider__links">
-        {children.map((item, index) => {
-          return (
-            <button
-              key={index}
-              className={
-                activeIndex === index
-                  ? "container__slider__links-small container__slider__links-small-active"
-                  : "container__slider__links-small"
-              }
-              onClick={(e) => {
-                e.preventDefault();
-                setActiveIndex(index);
-              }}
-            ></button>
-          );
-        })}
+        {React.Children.map(children, (_, index) => (
+          <button
+            key={index}
+            className={
+              activeIndex === index
+                ? "container__slider__links-small container__slider__links-small-active"
+                : "container__slider__links-small"
+            }
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveIndex(index);
+            }}
+          ></button>
+        ))}
       </div>
 
       <button
@@ -98,7 +119,7 @@ function SliderPage({ children }) {
           slideNext();
         }}
       >
-        <ArrowForwardIcon/>
+        <ArrowForwardIcon />
       </button>
       <button
         className="slider__btn-prev"
@@ -107,7 +128,7 @@ function SliderPage({ children }) {
           slidePrev();
         }}
       >
-        <ArrowBackIcon/>
+        <ArrowBackIcon />
       </button>
     </div>
   );

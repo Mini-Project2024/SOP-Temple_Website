@@ -16,7 +16,6 @@ const Header = () => {
     setOpen(!open);
   };
 
-  
   return (
     <div
       className="flex items-center justify-between px-8 py-6 fixed w-full z-50"
@@ -36,7 +35,7 @@ const Header = () => {
           <ul className="flex gap-10 font-bold">
             <li
               className={`nav-item text-white cursor-pointer ${
-                activeIndex === 1 ? "text-blue-900" : ""
+                activeIndex === 0 ? "text-blue-900" : ""
               }`}
               onClick={() => handleClick(0, "history")}
             >
@@ -48,7 +47,7 @@ const Header = () => {
               }`}
               onClick={() => handleClick(1, "events")}
             >
-            ಕಾರ್ಯಕ್ರಮಗಳು            
+              ಕಾರ್ಯಕ್ರಮಗಳು            
             </li>
             <li
               className={`nav-item text-white cursor-pointer ${
@@ -108,25 +107,25 @@ const Header = () => {
           </li>
           <li
             className={`nav-item cursor-pointer text-white ${
-              activeIndex === 1 ? "text-blue-900" : ""
+              activeIndex === 3 ? "text-blue-900" : ""
             }`}
-            onClick={() => handleClick(2, "gallery")}
+            onClick={() => handleClick(3, "gallery")}
           >
             ಗ್ಯಾಲರಿ
           </li>
           <li
             className={`nav-item cursor-pointer text-white ${
-              activeIndex === 2 ? "text-blue-900" : ""
+              activeIndex === 1 ? "text-blue-900" : ""
             }`}
-            onClick={() => handleClick(3, "events")}
+            onClick={() => handleClick(1, "events")}
           >
             ಕಾರ್ಯಕ್ರಮಗಳು 
           </li>
           <li
             className={`nav-item cursor-pointer text-white ${
-              activeIndex === 3 ? "text-blue-900" : ""
+              activeIndex === 2 ? "text-blue-900" : ""
             }`}
-            onClick={() => handleClick(3, "management")}
+            onClick={() => handleClick(2, "management")}
           >
             ಆಡಳಿತ ಮಂಡಲಿ 
           </li>
