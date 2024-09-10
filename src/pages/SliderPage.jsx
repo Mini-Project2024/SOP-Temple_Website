@@ -7,19 +7,19 @@ import "../css/slider.css";
 function SliderPage({ id, children }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [slideDone, setSlideDone] = useState(true);
-  const [timeID, setTimeID] = useState(null);
+  // const [timeID, setTimeID] = useState(null);
 
-  useEffect(() => {
-    if (slideDone) {
-      setSlideDone(false);
-      setTimeID(
-        setTimeout(() => {
-          slideNext();
-          setSlideDone(true);
-        }, 5000)
-      );
-    }
-  }, [slideDone]);
+  // useEffect(() => {
+  //   if (slideDone) {
+  //     setSlideDone(false);
+  //     setTimeID(
+  //       setTimeout(() => {
+  //         slideNext();
+  //         setSlideDone(true);
+  //       }, 5000)
+  //     );
+  //   }
+  // }, [slideDone]);
 
   const slideNext = () => {
     setActiveIndex((val) => {
