@@ -108,7 +108,7 @@ const TempleEvent = ({ id }) => {
                     backgroundImage: `url(${Mandir})`, transform: "rotate(180deg) scaleY(-1)",
                 }}></div>
                 <div className="w-screen overflow-hidden relative min-h-[600px] z-30">
-                    <h2 className="text-4xl mb-5 text-gray-800">ಕಾರ್ಯಕ್ರಮಗಳು</h2>
+                    <h2 className="text-4xl mb-3 mt-2 text-gray-800 font-semibold" >ಕಾರ್ಯಕ್ರಮಗಳು</h2>
 
                     <div
                         className="flex transition-transform duration-500 ease-in-out"

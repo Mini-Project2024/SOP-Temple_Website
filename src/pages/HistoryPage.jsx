@@ -40,9 +40,9 @@ const HistoryPage = ({ id }) => {
 
   return (
     <>
-      <div className="w-full h-full flex p-10 px-50 py-50 bg-orange-100">
+      <div id={id} className="w-full h-full flex p-10 px-50 py-50 bg-orange-100">
         <div className="flex flex-col items-center">
-          <h1 className="text-center text-4xl font-extrabold text-red-900 underline ">
+          <h1 className="text-center text-4xl font-extrabold text-red-900 underline mt-10 ">
             ಇತಿಹಾಸ
           </h1>
           <br />
@@ -63,7 +63,7 @@ const HistoryPage = ({ id }) => {
             {/* Kannada Text below the Image */}
           </div>
 
-          <p className="p-10 leading-30  text-justify text-red-900 font-serif font-semibold">
+          <p className="p-10 leading-30  text-justify text-red-900 font-serif font-semibold"  style={{ lineHeight: "1.6em"}}>
             ನಮ್ಮಿ ತುಳುನಾಡು ಸತ್ಯ, ನ್ಯಾಯ, ಧರ್ಮಕ್ಕೆ ಪ್ರಸಿದ್ಧಿ ಪಡೆದ ಪುಣ್ಯಭೂಮಿ.
             ಇಲ್ಲಿನ ಸಂಸ್ಕೃತಿ, ಆಚಾರ ವಿಚಾರಗಳು, ಆರಾಧನಾ ಪದ್ಧತಿಗಳು ಜಗತ್ತಿನೆಲ್ಲೆಡೆ
             ಪ್ರಖ್ಯಾತಿ ಪಡೆದಿರುವುದು ತುಳುನಾಡಿನ ಹೆಮ್ಮೆ, ಈ ನೆಲದ ಸಂಸ್ಕೃತಿಯನ್ನು
