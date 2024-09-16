@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-
+import logo from '../images/TempleOG.jpg'
 const Header = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [open, setOpen] = useState(false);
@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <div
-      className="flex items-center justify-between px-8 py-6 fixed w-full z-50"
+      className="flex items-center justify-between px-8 pt-5 pb-2 fixed w-full z-50"
       style={{
         background: "linear-gradient(90deg, rgba(253, 190, 87, 1) 0%, rgba(252, 187, 88, 1) 10%, rgba(244, 119, 40, 1) 40%, rgba(244, 119, 40, 1) 100%)",
         borderBottomLeftRadius: "30px",
@@ -26,9 +26,9 @@ const Header = () => {
       }}
     >
       <div className="nav-pattern"></div>
-      <h3 className="text-xl md:text-xl  font-bold text-white">
-        ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ದೇವಸ್ಥಾನ
-      </h3>
+      <div className="logo h-12 w-12 rounded-full">
+        <img src={logo} alt="" className="h-12 w-12 rounded-full" />
+      </div>
 
       <div className="hidden md:block">
         <nav>
