@@ -34,7 +34,7 @@ const LandingPage = () => {
       ></div>
 
       <div
-        className="absolute md:top-[77px] md:left-[25%] xs:w-0 h-48 md:w-full z-30"
+        className="absolute md:top-[77px] md:left-[15%] xs:w-0 h-48 md:w-full z-30"
         style={{
           backgroundImage: `url(${diya})`,
           backgroundRepeat: "no-repeat",
@@ -42,8 +42,19 @@ const LandingPage = () => {
 
         }}
       ></div>
+<h3
+  className="templename text-4xl md:text-5xl font-bold absolute top-[110px] left-1/2 transform -translate-x-1/2 text-center leading-none py-8"
+  style={{ lineHeight: "1.4em",
+    background: "linear-gradient(90deg, rgba(253, 190, 87, 1) 0%, rgba(252, 187, 88, 1) 10%, rgba(244, 119, 40, 1) 40%, rgba(244, 119, 40, 1) 100%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+  }}
+>
+  ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ದೇವಸ್ಥಾನ ಬಾಚಕೆರೆ
+</h3>
 
-      <div className="absolute top-[77px] right-[25%] xs:w-0 h-full md:w-full z-30">
+
+      <div className="absolute top-[77px] right-[15%] xs:w-0 h-full md:w-full z-30">
         <div
           className="h-48 w-full"
           style={{
