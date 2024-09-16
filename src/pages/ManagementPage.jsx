@@ -1,48 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import bottomBorder from "../assets/title-img-orange.svg";
 import mainOwner from "../images/TempleMain.JPG";
 
 const TeamMember = ({ name, role, description, image }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
-    <div className="w-64 m-4 cursor-pointer flex flex-col items-center">
-      <div
-        className="relative w-full h-80 perspective-1000"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <div
-          className={`relative w-full h-full transition-transform duration-500 ${
-            isHovered ? "rotate-y-180" : ""
-          }`}
-          style={{
-            transformStyle: "preserve-3d",
-            transform: isHovered ? "rotateY(180deg)" : "rotateY(0deg)",
-          }}
-        >
-          <div
-            className="absolute w-full h-full backface-hidden"
-            style={{ backfaceVisibility: "hidden" }}
-          >
-            <img
-              src={image}
-              alt={name}
-              className="w-full h-full object-cover rounded-lg"
-            />
-          </div>
-          <div
-            className="absolute w-full h-full backface-hidden bg-orange-500 rounded-lg p-4 flex flex-col justify-center text-white"
-            style={{
-              transform: "rotateY(180deg)",
-              backfaceVisibility: "hidden",
-            }}
-          >
-            <h3 className="text-xl font-bold mb-2">{name}</h3>
-            <p className="font-semibold mb-1">{role}</p>
-            <p className="text-sm">{description}</p>
-          </div>
-        </div>
+    <div className="w-64 m-4 flex flex-col items-center">
+      <div className="relative w-full h-80">
+        <img
+          src={image}
+          alt={name}
+          className="w-full h-full object-cover rounded-lg"
+        />
       </div>
       <div
         className="relative mt-2 text-center"
