@@ -4,7 +4,7 @@ import mainOwner from "../images/TempleMain.JPG";
 import sanjeevaPoojary from "../images/sanjeevaPoojary.jpg";
 import sarapadiAshokShetty from "../images/sarapadiAshokShetty.jpg";
 import dayanandaShetty from "../images/dayanandShetty.jpg"
-import purushottamKayarpalke from "../images/purushothamaKayarpalke.jpg"
+import purushottamKayarpalke from "../images/purushothamaKayarPalke.jpg"
 import templeSwami from "../images/TempleOG.jpg"
 
 const TeamMember = ({ name, role, description, image }) => {
