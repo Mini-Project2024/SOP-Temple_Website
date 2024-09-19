@@ -21,8 +21,8 @@ const Header = () => {
       className="flex items-center justify-between px-8 pt-5 pb-2 fixed w-full z-50"
       style={{
         background: "linear-gradient(90deg, rgba(253, 190, 87, 1) 0%, rgba(252, 187, 88, 1) 10%, rgba(244, 119, 40, 1) 40%, rgba(244, 119, 40, 1) 100%)",
-        borderBottomLeftRadius: "30px",
-        borderBottomRightRadius: "30px",
+        borderBottomLeftRadius: open ? "0px" : "30px",
+        borderBottomRightRadius: open ? "0px" : "30px",
       }}
     >
       <div className="nav-pattern"></div>
@@ -92,7 +92,7 @@ const Header = () => {
         }`}
         style={{ 
             width: "100vw",
-            top: "55px",
+            top: "69px",
             background: "linear-gradient(90deg, rgba(253, 190, 87, 1) 0%, rgba(252, 187, 88, 1) 10%, rgba(244, 119, 40, 1) 40%, rgba(244, 119, 40, 1) 100%)",
          }}
       >

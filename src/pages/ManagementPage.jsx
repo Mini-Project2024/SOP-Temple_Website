@@ -1,6 +1,11 @@
 import React from "react";
 import bottomBorder from "../assets/title-img-orange.svg";
 import mainOwner from "../images/TempleMain.JPG";
+import sanjeevaPoojary from "../images/sanjeevaPoojary.jpg";
+import sarapadiAshokShetty from "../images/sarapadiAshokShetty.jpg";
+import dayanandaShetty from "../images/dayanandShetty.jpg"
+import purushottamKayarpalke from "../images/purushothamaKayarpalke.jpg"
+import templeSwami from "../images/TempleOG.jpg"
 
 const TeamMember = ({ name, role, description, image }) => {
   return (
@@ -34,7 +39,7 @@ const TeamMember = ({ name, role, description, image }) => {
             }}
           />
         </div>
-        <p className="font-semibold">{name}</p>
+        <p className="font-semibold text-[#ef5521ff]">{name}</p>
         <p className="text-sm">{role}</p>
       </div>
     </div>
@@ -46,26 +51,32 @@ const ManagementPage = ({ id }) => {
     {
       name: "Sharad Kamath",
       role: "Founder",
-      description: "Temple Tech Innovator",
+      image: templeSwami
+    },
+    {
+      name: "Sharad Kamath",
+      role: "Founder",
       image: mainOwner
     },
     {
-      name: "S Prakash",
+      name: "ದಯಾನಂದ ಶೆಟ್ಟಿ",
       role: "Co-Founder",
-      description: "Co-Founder of 3iology, specializing in Corporate Affairs and Managed Services & Operations with more than 20 years of experience.",
-      image: mainOwner
+      image: dayanandaShetty
     },
     {
-      name: "Parag Bhuptani",
+      name: "ಸರಪಾಡಿ ಅಶೋಕ್ ಶೆಟ್ಟಿ",
       role: "Co-Founder",
-      description: "Experienced co-founder with expertise in technology and innovation.",
-      image: mainOwner
+      image: sarapadiAshokShetty
     },
     {
-      name: "Dr. Sarika Mahajan",
+      name: "ಸಂಜೀವ ಪೂಜಾರಿ",
       role: "Advisor",
-      description: "Expert advisor providing valuable insights to the team.",
-      image: mainOwner
+      image: sanjeevaPoojary
+    },
+    {
+      name: "ಪುರುಷೋತ್ತಮ ಕಾಯರ್ಪಲ್ಕೆ",
+      role: "Advisor",
+      image: purushottamKayarpalke
     }
   ];
 

@@ -4,16 +4,11 @@ import deviJPG from './devi.JPG';
 import Chakra from './chakra.svg'
 import templeMarivanige from'./templeMarivanige.jpg';
 import TempleOG from './TempleOG.jpg';
-import TempleVideo2 from './TempleVideo2.mp4';
 import templeMain2 from './templeMain2.jpg';
 import TempleMain from './TempleMain.JPG';
 import Ganesha from './ganesha.jpg'
 
 const images = [
-  {
-    imgURL: TempleVideo2,
-    imgAlt: "img-1"
-  },
   {
     imgURL: deviJPG,
     imgAlt: "img-2"
