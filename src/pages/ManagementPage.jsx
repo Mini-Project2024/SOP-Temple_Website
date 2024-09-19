@@ -70,7 +70,7 @@ const ManagementPage = ({ id }) => {
   ];
 
   return (
-    <div id={id} className="bg-[#fff7e7] w-full min-h-[100vh] border-2 pt-20">
+    <div id={id} className="bg-[#fff7e7] w-full min-h-[100vh] pt-20">
       <h2 className="font-bold md:text-3xl xs:text-xl flex justify-center text-[#ef5521ff]">
         ದೇವಾಲಯದ ಆಡಳಿತ ಮಂಡಲಿ
       </h2>

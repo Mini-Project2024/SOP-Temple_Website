@@ -27,7 +27,8 @@ export default {
         },
       },
       screens: {
-        xs: '360px', // Custom screen size
+        xs: '360px',
+        ms: '780px',
       },
     },
   },

@@ -363,3 +363,13 @@ display: none;
     width: 120%;
   }
 }
+
+/* @media (max-width: 780px) {
+  .middle_chakra{
+    bottom: 200px;
+    width: 10rem;
+    height: 10rem;
+    left: 175px;
+  }
+
+} */

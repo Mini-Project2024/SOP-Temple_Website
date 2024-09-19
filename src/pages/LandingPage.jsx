@@ -116,8 +116,9 @@ const LandingPage = () => {
 
       {/* Middle Chakra */}
       <div
-        className="absolute chakra animate-spin-slow md:bottom-[250px] md:left-[43%] md:h-48 md:w-48
-            xs:h-36 xs:w-36 xs:bottom-[200px] xs:left-[32%]
+        className="absolute middle_chakra chakra animate-spin-slow
+        md:bottom-[250px] md:left-[43%] md:h-48 md:w-48
+        xs:h-36 xs:w-36 xs:bottom-[200px] xs:left-[32%]
         "
         style={{
           backgroundSize: "contain",
