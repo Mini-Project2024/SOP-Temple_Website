@@ -54,23 +54,23 @@ const ManagementPage = ({ id }) => {
       image: templeSwami
     },
     {
-      name: "Sharad Kamath",
-      role: "Founder",
+      name: "ದೇಜಪ್ಪ ಬಾಚಕೆರೆ",
+      role: "ಸ್ಥಾಪಕಾಧ್ಯಕ್ಷರು / ಧರ್ಮದರ್ಶಿಗಳು",
       image: mainOwner
     },
     {
       name: "ದಯಾನಂದ ಶೆಟ್ಟಿ",
-      role: "Co-Founder",
+      role: "ಪ್ರಧಾನ ಕಾರ್ಯದರ್ಶಿ",
       image: dayanandaShetty
     },
     {
       name: "ಸರಪಾಡಿ ಅಶೋಕ್ ಶೆಟ್ಟಿ",
-      role: "Co-Founder",
+      role: "ಕಾರ್ಯದರ್ಶಿ",
       image: sarapadiAshokShetty
     },
     {
       name: "ಸಂಜೀವ ಪೂಜಾರಿ",
-      role: "Advisor",
+      role: "ಅಧ್ಯಕ್ಷರು",
       image: sanjeevaPoojary
     },
     {
