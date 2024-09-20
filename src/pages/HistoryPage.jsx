@@ -1,13 +1,17 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import "../App.css";
 import oldphoto from "../images/oldphoto1.jpg";
 import moola from "../images/moolasanidhya.JPG";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Importing icons
+
 const HistoryPage = ({ id }) => {
   const sectionsRef = useRef([]);
+  const contentRef = useRef(); // Ref for the additional content
+  const [showMore, setShowMore] = useState(false); // State to handle showing more content
 
   useEffect(() => {
-    // Animate the left-side divs to come from the left and right-side divs from the right
+    // Animation logic for initial section loading
     sectionsRef.current.forEach((section, index) => {
       const leftDiv = section.querySelector(".left-div");
       const rightDiv = section.querySelector(".right-div");
@@ -38,11 +42,38 @@ const HistoryPage = ({ id }) => {
     });
   }, []);
 
+  // Toggle between showing more or less content with slow motion effect
+  const toggleShowMore = () => {
+    if (showMore) {
+      // Animate content hide with slow motion
+      gsap.to(contentRef.current, {
+        opacity: 0,
+        height: 0,
+        duration: 1, // Slow motion duration
+        ease: "power2.inOut",
+        onComplete: () => setShowMore(false),
+      });
+    } else {
+      // Animate content reveal with slow motion
+      setShowMore(true);
+      gsap.fromTo(
+        contentRef.current,
+        { opacity: 0, height: 0 },
+        {
+          opacity: 1,
+          height: "auto",
+          duration: 1, // Slow motion duration
+          ease: "power2.inOut",
+        }
+      );
+    }
+  };
+
   return (
     <>
       <div id={id} className="w-full h-full flex p-10 px-50 py-50 bg-orange-100">
         <div className="flex flex-col items-center">
-          <h1 className="text-center text-4xl font-extrabold text-red-900 underline mt-10 ">
+          <h1 className="text-center text-4xl font-extrabold text-red-900 underline mt-10">
             ಇತಿಹಾಸ
           </h1>
           <br />
@@ -59,11 +90,12 @@ const HistoryPage = ({ id }) => {
                 ಬಾಚಕೆರೆ ಮೂಲ ಸಾನಿಧ್ಯ
               </p>
             </div>
-
-            {/* Kannada Text below the Image */}
           </div>
 
-          <p className="p-10 leading-30  text-justify text-red-900 font-serif font-semibold"  style={{ lineHeight: "1.6em"}}>
+          <p
+            className="p-10 leading-30 text-justify text-red-900 font-serif font-semibold"
+            style={{ lineHeight: "1.6em" }}
+          >
             ನಮ್ಮಿ ತುಳುನಾಡು ಸತ್ಯ, ನ್ಯಾಯ, ಧರ್ಮಕ್ಕೆ ಪ್ರಸಿದ್ಧಿ ಪಡೆದ ಪುಣ್ಯಭೂಮಿ.
             ಇಲ್ಲಿನ ಸಂಸ್ಕೃತಿ, ಆಚಾರ ವಿಚಾರಗಳು, ಆರಾಧನಾ ಪದ್ಧತಿಗಳು ಜಗತ್ತಿನೆಲ್ಲೆಡೆ
             ಪ್ರಖ್ಯಾತಿ ಪಡೆದಿರುವುದು ತುಳುನಾಡಿನ ಹೆಮ್ಮೆ, ಈ ನೆಲದ ಸಂಸ್ಕೃತಿಯನ್ನು
@@ -90,7 +122,43 @@ const HistoryPage = ({ id }) => {
             ಬೆಳವಣಿಗೆಗೂ ಪ್ರೋತ್ಸಾಹವನ್ನು ನೀಡಲಾಗುತ್ತಿದೆ. ಪ್ರತಿವರ್ಷ ಶಾಲಾ ಮಕ್ಕಳಿಗೆ
             ಉಚಿತವಾಗಿ ಪುಸ್ತಕ ವಿತರಿಸುವ ಮೂಲಕ ಶೈಕ್ಷಣಿಕ ಕ್ಷೇತ್ರದ ಪ್ರಗತಿಗೂ
             ಶ್ರಮಿಸಲಾಗುತ್ತಿದೆ.
+            {!showMore && (
+              <>
+                ... {/* Add ellipsis to indicate more content */}
+              </>
+            )}
           </p>
+
+          {/* Slow motion additional content */}
+          <div
+            ref={contentRef}
+            style={{ overflow: "hidden", height: showMore ? "auto" : "0" }}
+          >
+            {showMore && (
+              <p
+                className=" leading-3 text-justify text-red-900 font-serif font-semibold"
+                style={{ lineHeight: "1.6em",
+                  padding: "0 40px"
+                 }}
+              >
+                {/* Additional content */}
+                ತುಳುನಾಡಿನ ಪುಣ್ಯಕ್ಷೇತ್ರಗಳಲ್ಲಿ ಕಾಲಕಾಲಕ್ಕೆ ನಡೆಯುವ ಪೂಜೆ, ಉತ್ಸವಾದಿಗಳು
+                ಮಾನವ ಕುಲದ ಬದುಕಿಗೆ ಶಾಂತಿ, ನೆಮ್ಮದಿಯನ್ನು ನೀಡುವುದರೊಂದಿಗೆ ಸಮಾಜ
+                ಸತ್ಪಥದಲ್ಲಿ ಮುನ್ನಡೆಯಲು ಪ್ರೇರಣೆಯಾದುದು. ... (Full content continues here)
+              </p>
+            )}
+          </div>
+
+          {/* Read More Button */}
+          <div className="flex justify-center my-4">
+            <button
+              onClick={toggleShowMore}
+              className="bg-red-900 gap-2 text-white px-6 py-2 rounded-full flex items-center space-x-2 transition-transform transform hover:scale-105"
+            >
+              {showMore ? "ಪುಟ್ಟ ಮಾಹಿತಿ" : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿ"}{" "}
+              {showMore ? <FaChevronUp /> : <FaChevronDown />}
+            </button>
+          </div>
         </div>
       </div>
     </>
@@ -98,45 +166,3 @@ const HistoryPage = ({ id }) => {
 };
 
 export default HistoryPage;
-// <div id={id} className="history-section h-[100vh] w-full mb-3 mt-3 p-4">
-//
-
-//   <div
-//     ref={(el) => (sectionsRef.current[0] = el)}
-//     className="flex flex-col md:flex-row justify-around w-full mb-4 mt-4"
-//   >
-//     <div className="bg-red-500 left-div w-full md:w-1/2 h-auto p-4 text-justify flex-1"></div>
-//     <div className="bg-blue-500 right-div w-full md:w-1/2 h-auto p-4 text-justify flex-1">
-//       Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-//       doloribus, hic porro ipsum sapiente necessitatibus quisquam. Velit at,
-//       veritatis expedita aliquam fuga enim reprehenderit impedit maiores
-//       nihil dignissimos architecto asperiores!
-//     </div>
-//   </div>
-
-//   <div
-//     ref={(el) => (sectionsRef.current[1] = el)}
-//     className="flex flex-col md:flex-row justify-around w-full mb-4 mt-4"
-//   >
-//     <div className="bg-green-500 left-div w-full md:w-1/2 h-auto p-4 text-justify flex-1">
-//       Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-//       doloribus, hic porro ipsum sapiente necessitatibus quisquam. Velit at,
-//       veritatis expedita aliquam fuga enim reprehenderit impedit maiores
-//       nihil dignissimos architecto asperiores!
-//     </div>
-//     <div className="bg-yellow-500 right-div w-full md:w-1/2 h-auto p-4 text-justify flex-1"></div>
-//   </div>
-
-//   <div
-//     ref={(el) => (sectionsRef.current[2] = el)}
-//     className="flex flex-col md:flex-row justify-around w-full mb-4 mt-4"
-//   >
-//     <div className="bg-purple-500 left-div w-full md:w-1/2 h-auto p-4 text-justify flex-1"></div>
-//     <div className="bg-pink-500 right-div w-full md:w-1/2 h-auto p-4 text-justify flex-1">
-//       Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-//       doloribus, hic porro ipsum sapiente necessitatibus quisquam. Velit at,
-//       veritatis expedita aliquam fuga enim reprehenderit impedit maiores
-//       nihil dignissimos architecto asperiores!
-//     </div>
-//   </div>
-// </div>
