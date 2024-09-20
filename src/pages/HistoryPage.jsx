@@ -132,13 +132,13 @@ const HistoryPage = ({ id }) => {
           {/* Slow motion additional content */}
           <div
             ref={contentRef}
-            style={{ overflow: "hidden", height: showMore ? "auto" : "0" }}
-          >
+            style={{ overflow: "hidden", width: "full",height: showMore ? "auto" : "0" }}
+          > 
+          <br></br>
             {showMore && (
               <p
-                className=" leading-3 text-justify text-red-900 font-serif font-semibold"
+                className="md:pl-10 md:pr-10 leading-3 text-justify text-red-900 font-serif font-semibold"
                 style={{ lineHeight: "1.6em",
-                  padding: "0 40px"
                  }}
               >
                 {/* Additional content */}
