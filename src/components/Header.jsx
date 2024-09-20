@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import logo from '../images/TempleOG.jpg'
+import logo from "../images/TempleOG.jpg";
 const Header = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [open, setOpen] = useState(false);
@@ -20,9 +20,11 @@ const Header = () => {
     <div
       className="flex items-center justify-between px-8 pt-5 pb-2 fixed w-full z-50"
       style={{
-        background: "linear-gradient(90deg, rgba(253, 190, 87, 1) 0%, rgba(252, 187, 88, 1) 10%, rgba(244, 119, 40, 1) 40%, rgba(244, 119, 40, 1) 100%)",
+        background:
+          "linear-gradient(90deg, rgba(253, 190, 87, 1) 0%, rgba(252, 187, 88, 1) 10%, rgba(244, 119, 40, 1) 40%, rgba(244, 119, 40, 1) 100%)",
         borderBottomLeftRadius: open ? "0px" : "30px",
         borderBottomRightRadius: open ? "0px" : "30px",
+        zIndex: "1000",
       }}
     >
       <div className="nav-pattern"></div>
@@ -47,7 +49,7 @@ const Header = () => {
               }`}
               onClick={() => handleClick(1, "events")}
             >
-              ಕಾರ್ಯಕ್ರಮಗಳು            
+              ಕಾರ್ಯಕ್ರಮಗಳು
             </li>
             <li
               className={`nav-item text-white cursor-pointer ${
@@ -90,15 +92,16 @@ const Header = () => {
         className={`fixed top-0 right-0 transform transition-transform duration-300 ease-in-out z-40 md:hidden ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
-        style={{ 
-            width: "100vw",
-            top: "69px",
-            background: "linear-gradient(90deg, rgba(253, 190, 87, 1) 0%, rgba(252, 187, 88, 1) 10%, rgba(244, 119, 40, 1) 40%, rgba(244, 119, 40, 1) 100%)",
-         }}
+        style={{
+          width: "100vw",
+          top: "69px",
+          background:
+            "linear-gradient(90deg, rgba(253, 190, 87, 1) 0%, rgba(252, 187, 88, 1) 10%, rgba(244, 119, 40, 1) 40%, rgba(244, 119, 40, 1) 100%)",
+        }}
       >
         <ul className="flex flex-col gap-10 p-8 font-bold h-full">
           <li
-            className={`nav-item cursor-pointer text-white ${
+            className={`nav-item text-white cursor-pointer ${
               activeIndex === 0 ? "text-blue-900" : ""
             }`}
             onClick={() => handleClick(0, "history")}
@@ -106,7 +109,23 @@ const Header = () => {
             ಇತಿಹಾಸ
           </li>
           <li
-            className={`nav-item cursor-pointer text-white ${
+            className={`nav-item text-white cursor-pointer ${
+              activeIndex === 1 ? "text-blue-900" : ""
+            }`}
+            onClick={() => handleClick(1, "events")}
+          >
+            ಕಾರ್ಯಕ್ರಮಗಳು
+          </li>
+          <li
+            className={`nav-item text-white cursor-pointer ${
+              activeIndex === 2 ? "text-blue-900" : ""
+            }`}
+            onClick={() => handleClick(2, "management")}
+          >
+            ಆಡಳಿತ ಮಂಡಲಿ
+          </li>
+          <li
+            className={`nav-item text-white cursor-pointer ${
               activeIndex === 3 ? "text-blue-900" : ""
             }`}
             onClick={() => handleClick(3, "gallery")}
@@ -114,23 +133,7 @@ const Header = () => {
             ಗ್ಯಾಲರಿ
           </li>
           <li
-            className={`nav-item cursor-pointer text-white ${
-              activeIndex === 1 ? "text-blue-900" : ""
-            }`}
-            onClick={() => handleClick(1, "events")}
-          >
-            ಕಾರ್ಯಕ್ರಮಗಳು 
-          </li>
-          <li
-            className={`nav-item cursor-pointer text-white ${
-              activeIndex === 2 ? "text-blue-900" : ""
-            }`}
-            onClick={() => handleClick(2, "management")}
-          >
-            ಆಡಳಿತ ಮಂಡಲಿ 
-          </li>
-          <li
-            className={`nav-item cursor-pointer text-white ${
+            className={`nav-item text-white cursor-pointer ${
               activeIndex === 4 ? "text-blue-900" : ""
             }`}
             onClick={() => handleClick(4, "contact")}
