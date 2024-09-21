@@ -4,7 +4,7 @@ import mainOwner from "../images/TempleMain.JPG";
 import sanjeevaPoojary from "../images/sanjeevaPoojary.jpg";
 import sarapadiAshokShetty from "../images/sarapadiAshokShetty.jpg";
 import dayanandaShetty from "../images/dayanandShetty.jpg"
-import purushottamKayarpalke from "../images/purushothamaKayarPalke.jpg"
+import girinath from "../images/girinath.jpg"
 import templeSwami from "../images/TempleOG.jpg"
 
 const TeamMember = ({ name, role, description, image }) => {
@@ -49,8 +49,8 @@ const TeamMember = ({ name, role, description, image }) => {
 const ManagementPage = ({ id }) => {
   const teamMembers = [
     {
-      name: "Sharad Kamath",
-      role: "Founder",
+      name: "ಶ್ರೀ ಶ್ರೀ ಮೋಹನದಾಸ ಪರಮಹಂಸ ಸ್ವಾಮೀಜಿ",
+      role: "ಶ್ರೀ ಧಾಮ ಮಣಿಲ ಸ್ವಾಮೀಜಿ",
       image: templeSwami
     },
     {
@@ -74,9 +74,9 @@ const ManagementPage = ({ id }) => {
       image: sanjeevaPoojary
     },
     {
-      name: "ಪುರುಷೋತ್ತಮ ಕಾಯರ್ಪಲ್ಕೆ",
-      role: "Advisor",
-      image: purushottamKayarpalke
+      name: "ಗಿರಿನಾಥ ಬಾಚಕೆರೆ",
+      role: "ಪ್ರಧಾನ ಅರ್ಚಕರು",
+      image: girinath
     }
   ];
 
