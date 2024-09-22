@@ -6,6 +6,7 @@ import sarapadiAshokShetty from "../images/sarapadiAshokShetty.jpg";
 import dayanandaShetty from "../images/dayanandShetty.jpg"
 import girinath from "../images/girinath.jpg"
 import templeSwami from "../images/TempleOG.jpg"
+import sundar from "../images/sundar.jpg"
 
 const TeamMember = ({ name, role, description, image }) => {
   return (
@@ -72,6 +73,11 @@ const ManagementPage = ({ id }) => {
       name: "ಸಂಜೀವ ಪೂಜಾರಿ",
       role: "ಅಧ್ಯಕ್ಷರು",
       image: sanjeevaPoojary
+    },
+    {
+      name: "ಸುಂದರ್ ಬಾಚಕೆರೆ",
+      role: "ಕೋಶಾಧಿಕಾರಿ",
+      image: sundar
     },
     {
       name: "ಗಿರಿನಾಥ ಬಾಚಕೆರೆ",
