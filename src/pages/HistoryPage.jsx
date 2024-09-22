@@ -3,7 +3,7 @@ import gsap from "gsap";
 import "../App.css";
 import oldphoto from "../images/oldphoto1.jpg";
 import moola from "../images/moolasanidhya.JPG";
-import ganapati from "../images/ganesha.JPG";
+import ganapati from "../images/ganesha.jpg";
 
 import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Importing icons
 
