@@ -148,6 +148,9 @@ const HistoryPage = ({ id }) => {
             </p>
             <br></br>
             <center>
+              <h1  className="text-center text-2xl font-extrabold text-red-900 underline mt-10">
+              ಗಣಪತಿ ದೇವರ ಕೊಡುಗೆ ನೀಡಿದ ದಯಾನಂದ ಶೆಟ್ಟಿ ಅವರ ಅನುಭವದ ಮಾಹಿತಿ</h1>
+              <br />
               <div className="ganesha ">
                 <img src={ganapati} className="image3" alt="old photo" />
                 <p className="text-center text-xl font-bold text-red-900 mt-3">

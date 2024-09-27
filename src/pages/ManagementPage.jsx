@@ -1,10 +1,11 @@
 import React from "react";
 import bottomBorder from "../assets/title-img-orange.svg";
-import mainOwner from "../images/TempleMain.JPG";
+import mainOwner from "../images/dejappa.jpg";
 import sanjeevaPoojary from "../images/sanjeevaPoojary.jpg";
 import sarapadiAshokShetty from "../images/sarapadiAshokShetty.jpg";
 import dayanandaShetty from "../images/dayanandShetty.jpg"
 import girinath from "../images/girinath.jpg"
+import tantri from '../images/tantrii.jpg'
 import templeSwami from "../images/TempleOG.jpg"
 import sundar from "../images/sundar.jpg"
 
@@ -50,14 +51,24 @@ const TeamMember = ({ name, role, description, image }) => {
 const ManagementPage = ({ id }) => {
   const teamMembers = [
     {
+      name: "ದೇಜಪ್ಪ ಬಾಚಕೆರೆ",
+      role: "ಸ್ಥಾಪಕಾಧ್ಯಕ್ಷರು / ಧರ್ಮದರ್ಶಿಗಳು",
+      image: mainOwner
+    },
+    {
       name: "ಶ್ರೀ ಶ್ರೀ ಮೋಹನದಾಸ ಪರಮಹಂಸ ಸ್ವಾಮೀಜಿ",
       role: "ಶ್ರೀ ಧಾಮ ಮಣಿಲ ಸ್ವಾಮೀಜಿ",
       image: templeSwami
     },
     {
-      name: "ದೇಜಪ್ಪ ಬಾಚಕೆರೆ",
-      role: "ಸ್ಥಾಪಕಾಧ್ಯಕ್ಷರು / ಧರ್ಮದರ್ಶಿಗಳು",
-      image: mainOwner
+      name: " ಶ್ರೀ ಶಿವಪ್ರಸಾದ ಐತಾಳರು",
+      role: "ಕ್ಷೇತ್ರದ ಪ್ರಧಾನ ತಂತ್ರಿಗಳು",
+      image: tantri
+    },
+    {
+      name: "ಸಂಜೀವ ಪೂಜಾರಿ",
+      role: "ಅಧ್ಯಕ್ಷರು",
+      image: sanjeevaPoojary
     },
     {
       name: "ದಯಾನಂದ ಶೆಟ್ಟಿ",
@@ -69,11 +80,7 @@ const ManagementPage = ({ id }) => {
       role: "ಕಾರ್ಯದರ್ಶಿ",
       image: sarapadiAshokShetty
     },
-    {
-      name: "ಸಂಜೀವ ಪೂಜಾರಿ",
-      role: "ಅಧ್ಯಕ್ಷರು",
-      image: sanjeevaPoojary
-    },
+   
     {
       name: "ಸುಂದರ್ ಬಾಚಕೆರೆ",
       role: "ಕೋಶಾಧಿಕಾರಿ",

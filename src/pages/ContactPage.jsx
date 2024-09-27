@@ -44,7 +44,7 @@ const ContactPage = ({ id }) => {
         <div className="flex flex-col align-center justify-center map-div leading-9">
           <h1 className="font-bold text-2xl text-red-900 underline">ವಿಳಾಸ:</h1>
           <h1 className="font-bold text-xl text-red-900 leading-9">
-            ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ದೇವಸ್ಥಾನ, ಬಾಚಕೇರೆ ಸರಪಾಡಿ, ಮಾವಿನಕಟ್ಟೆ, <br />
+            ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ದೇವಸ್ಥಾನ,ಬಾಚಕೆರೆ ಸರಪಾಡಿ, ಮಾವಿನಕಟ್ಟೆ, <br />
             ಕರ್ನಾಟಕ 574265
           </h1>
           <br />
