@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 // Import images
-import devi from "../images/devi1.png";
+import devi from "../images/devii.png";
 import toranLeft from "../images/Toran-left.svg";
 import toranRight from "../images/Toran-right.svg";
 import diya from "../images/diya.gif";
@@ -51,7 +51,7 @@ const LandingPage = () => {
     zIndex: "100",
   }}
 >
-  ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ದೇವಸ್ಥಾನ ಬಾಚಕೆರೆ
+ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರೀ ದೇವಸ್ಥಾನ, ಬಾಚಕೆರೆ
 </h3>
 
 
@@ -140,7 +140,7 @@ const LandingPage = () => {
 
       {/* Devi Pic */}
       <div
-        className="absolute md:bottom-5 md:left-[36.5%] md:h-[400px] md:w-[400px] z-10 animate-slideInUp
+        className="absolute md:bottom-1 md:left-[36.5%] md:h-[420px] md:w-[420px] z-10 animate-slideInUp
           xs:h-[250px] xs:w-[250px] xs:bottom-8 xs:left-[18.8%]
         "
         style={{
