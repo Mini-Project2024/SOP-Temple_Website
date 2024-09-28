@@ -43,7 +43,7 @@ const LandingPage = () => {
         }}
       ></div>
 <h3
-  className="templename text-4xl md:text-5xl font-bold absolute top-[100px] left-1/2 transform -translate-x-1/2 text-center leading-none py-8"
+  className="templename text-4xl md:text-5xl font-bold absolute top-[85px] left-1/2 transform -translate-x-1/2 text-center leading-none py-8"
   style={{ lineHeight: "1.4em",
     background: "linear-gradient(90deg, rgba(253, 190, 87, 1) 0%, rgba(252, 187, 88, 1) 10%, rgba(244, 119, 40, 1) 40%, rgba(244, 119, 40, 1) 100%)",
     WebkitBackgroundClip: "text",
@@ -140,7 +140,7 @@ const LandingPage = () => {
 
       {/* Devi Pic */}
       <div
-        className="absolute md:bottom-1 md:left-[36.5%] md:h-[420px] md:w-[420px] z-10 animate-slideInUp
+        className="absolute md:bottom-[-8px] md:left-[36.5%] md:h-[420px] md:w-[420px] z-10 animate-slideInUp
           xs:h-[250px] xs:w-[250px] xs:bottom-8 xs:left-[18.8%]
         "
         style={{
