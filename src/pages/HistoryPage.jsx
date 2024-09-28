@@ -75,7 +75,7 @@ const HistoryPage = ({ id }) => {
     <>
       <div id={id} className="history w-full h-full flex p-3 bg-orange-100">
         <div className="flex flex-col items-center">
-          <h1 className="text-center text-4xl font-extrabold text-red-900 underline mt-10">
+          <h1 className="text-center text-4xl font-extrabold text-red-900 underline mt-16">
             ಇತಿಹಾಸ
           </h1>
           <br />
