@@ -55,9 +55,6 @@ const LandingPage = () => {
 >
   ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರೀ ದೇವಸ್ಥಾನ, ಬಾಚಕೆರೆ
 </h3>
-
-
-
       <div className="absolute top-[77px] right-[15%] xs:w-0 h-full md:w-full z-30">
         <div
           className="h-48 w-full"
@@ -144,7 +141,7 @@ const LandingPage = () => {
       {/* Devi Pic */}
       <div
         className="absolute md:bottom-[-8px] md:left-[36.5%] md:h-[420px] md:w-[420px] z-10 animate-slideInUp
-          xs:h-[250px] xs:w-[250px] xs:bottom-8 xs:left-[18.8%]
+          xs:h-[250px] xs:w-[250px] xs:bottom-8 xs:left-[20%]
         "
         style={{
           backgroundImage: `url(${devi})`,
