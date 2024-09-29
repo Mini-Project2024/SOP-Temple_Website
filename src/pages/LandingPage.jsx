@@ -43,16 +43,19 @@ const LandingPage = () => {
         }}
       ></div>
 <h3
-  className="templename text-4xl md:text-5xl font-bold absolute top-[85px] left-1/2 transform -translate-x-1/2 text-center leading-none py-8"
-  style={{ lineHeight: "1.4em",
+  className="templename font-bold absolute top-[85px] left-1/2 transform -translate-x-1/2 text-center leading-none py-8"
+  style={{
+    fontSize: "2.75rem", /* Custom size between 4xl (2.25rem) and 5xl (3rem) */
+    lineHeight: "1.4em",
     background: "linear-gradient(90deg, rgba(253, 190, 87, 1) 0%, rgba(252, 187, 88, 1) 10%, rgba(244, 119, 40, 1) 40%, rgba(244, 119, 40, 1) 100%)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     zIndex: "100",
   }}
 >
-ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರೀ ದೇವಸ್ಥಾನ, ಬಾಚಕೆರೆ
+  ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರೀ ದೇವಸ್ಥಾನ, ಬಾಚಕೆರೆ
 </h3>
+
 
 
       <div className="absolute top-[77px] right-[15%] xs:w-0 h-full md:w-full z-30">
