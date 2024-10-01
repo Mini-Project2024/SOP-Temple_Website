@@ -2,16 +2,19 @@ import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import logo from "../images/navd.jpg";
+
 const Header = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [open, setOpen] = useState(false);
 
   const handleClick = (index, id) => {
     setActiveIndex(index);
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
     setTimeout(() => setOpen(false), 300); // Close the menu after a short delay
   };
-  
 
   const toggleMenu = () => {
     setOpen(!open);
@@ -33,6 +36,7 @@ const Header = () => {
         <img src={logo} alt="" className="h-12 w-12 rounded-full" />
       </div>
 
+      {/* Desktop Navigation */}
       <div className="hidden md:block">
         <nav>
           <ul className="flex gap-10 font-bold">
@@ -80,6 +84,7 @@ const Header = () => {
         </nav>
       </div>
 
+      {/* Mobile Menu Icon */}
       <div className="md:hidden z-50">
         {open ? (
           <CloseIcon onClick={toggleMenu} className="cursor-pointer text-3xl" />
