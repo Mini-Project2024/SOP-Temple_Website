@@ -9,8 +9,9 @@ const Header = () => {
   const handleClick = (index, id) => {
     setActiveIndex(index);
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-    setOpen(false); // Close menu after clicking
+    setTimeout(() => setOpen(false), 300); // Close the menu after a short delay
   };
+  
 
   const toggleMenu = () => {
     setOpen(!open);
