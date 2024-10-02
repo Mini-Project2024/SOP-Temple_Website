@@ -62,7 +62,7 @@ const Header = () => {
       }}
     >
       <div className="nav-pattern"></div>
-      <div className="logo h-12 w-12 rounded-full border-orange-500">
+      <div className="logo h-12 w-12 rounded-full">
         <img src={logo} alt="Logo" className="h-12 w-12 rounded-full" />
       </div>
 

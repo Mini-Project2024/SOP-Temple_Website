@@ -8,6 +8,7 @@ function SliderPage({ id, children }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [slideDone, setSlideDone] = useState(true);
   const [timeID, setTimeID] = useState(null);
+  const maxIconsToShow = 5; // Maximum icons to show in mobile view
 
   useEffect(() => {
     if (slideDone) {
@@ -16,7 +17,7 @@ function SliderPage({ id, children }) {
         setTimeout(() => {
           slideNext();
           setSlideDone(true);
-        }, 5000)
+        }, 6000)
       );
     }
   }, [slideDone]);
@@ -59,9 +60,9 @@ function SliderPage({ id, children }) {
       console.error(`Invalid item at index ${index}:`, item);
       return null;
     }
-  
+
     const isVideo = item.props.src.toLowerCase().endsWith('.mp4');
-    
+
     return (
       <div
         className={`slider__item slider__item-active-${activeIndex + 1}`}
@@ -79,11 +80,26 @@ function SliderPage({ id, children }) {
           />
         ) : (
           React.cloneElement(item, {
+            loading: "lazy",
             className: "w-auto h-auto max-w-[90%] max-h-[90%] object-contain"
           })
         )}
       </div>
     );
+  };
+
+  const getVisibleLinks = () => {
+    const totalItems = React.Children.count(children);
+
+    // Determine the range of icons to show
+    let start = Math.max(activeIndex - Math.floor(maxIconsToShow / 2), 0);
+    let end = Math.min(start + maxIconsToShow, totalItems);
+
+    if (end - start < maxIconsToShow) {
+      start = Math.max(end - maxIconsToShow, 0);
+    }
+
+    return Array.from({ length: end - start }, (_, i) => start + i);
   };
 
   return (
@@ -96,13 +112,16 @@ function SliderPage({ id, children }) {
       {React.Children.map(children, (child, index) => renderSliderItem(child, index))}
 
       <div className="container__slider__links">
-        {React.Children.map(children, (_, index) => (
+        {getVisibleLinks().map((index) => (
           <button
             key={index}
             className={
-              activeIndex === index
-                ? "container__slider__links-small container__slider__links-small-active"
-                : "container__slider__links-small"
+
+              // activeIndex === index
+              //   ? "container__slider__links-small container__slider__links-small-active"
+              //   :
+
+               "container__slider__links-small"
             }
             onClick={(e) => {
               e.preventDefault();
