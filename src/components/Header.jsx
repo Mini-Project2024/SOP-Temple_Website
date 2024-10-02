@@ -7,13 +7,25 @@ const Header = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [open, setOpen] = useState(false);
 
+  // Scroll to the section and return a Promise that resolves after the scroll is completed
+  const scrollToSection = (id) => {
+    return new Promise((resolve) => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        // Wait for a short time to ensure the scroll is complete
+        setTimeout(resolve, 500); // Adjust timing if necessary
+      } else {
+        resolve(); // Resolve immediately if the element is not found
+      }
+    });
+  };
+
   const handleClick = (index, id) => {
     setActiveIndex(index);
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-    setTimeout(() => setOpen(false), 300); // Close the menu after a short delay
+    scrollToSection(id).then(() => {
+      setOpen(false); // Close the menu after scrolling
+    });
   };
 
   const toggleMenu = () => {
@@ -33,7 +45,7 @@ const Header = () => {
     >
       <div className="nav-pattern"></div>
       <div className="logo h-12 w-12 rounded-full">
-        <img src={logo} alt="" className="h-12 w-12 rounded-full" />
+        <img src={logo} alt="Logo" className="h-12 w-12 rounded-full" />
       </div>
 
       {/* Desktop Navigation */}
