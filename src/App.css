@@ -179,7 +179,7 @@
 @media (max-width: 480px) {
   .templename {
     text-align: center !important;
-    font-size: 30px !important;
+    font-size: 25px !important;
     top: 200px !important;
   }
 }

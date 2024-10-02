@@ -2,14 +2,30 @@ import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import logo from "../images/navd.jpg";
+
 const Header = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [open, setOpen] = useState(false);
 
+  // Scroll to the section and return a Promise that resolves after the scroll is completed
+  const scrollToSection = (id) => {
+    return new Promise((resolve) => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        // Wait for a short time to ensure the scroll is complete
+        setTimeout(resolve, 500); // Adjust timing if necessary
+      } else {
+        resolve(); // Resolve immediately if the element is not found
+      }
+    });
+  };
+
   const handleClick = (index, id) => {
     setActiveIndex(index);
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-    setOpen(false); // Close menu after clicking
+    scrollToSection(id).then(() => {
+      setOpen(false); // Close the menu after scrolling
+    });
   };
 
   const toggleMenu = () => {
@@ -29,9 +45,10 @@ const Header = () => {
     >
       <div className="nav-pattern"></div>
       <div className="logo h-12 w-12 rounded-full">
-        <img src={logo} alt="" className="h-12 w-12 rounded-full" />
+        <img src={logo} alt="Logo" className="h-12 w-12 rounded-full" />
       </div>
 
+      {/* Desktop Navigation */}
       <div className="hidden md:block">
         <nav>
           <ul className="flex gap-10 font-bold">
@@ -79,6 +96,7 @@ const Header = () => {
         </nav>
       </div>
 
+      {/* Mobile Menu Icon */}
       <div className="md:hidden z-50">
         {open ? (
           <CloseIcon onClick={toggleMenu} className="cursor-pointer text-3xl" />
