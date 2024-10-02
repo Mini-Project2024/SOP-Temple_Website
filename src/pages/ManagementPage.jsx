@@ -4,11 +4,14 @@ import mainOwner from "../images/dejappa.jpg";
 import sanjeevaPoojary from "../images/sanjeevaPoojary.jpg";
 import sarapadiAshokShetty from "../images/sarapadiAshokShetty.jpg";
 import dayanandaShetty from "../images/dayanandShetty.jpg"
+import upadyaksha from '../images/upadyaksha.jpg';
 import girinath from "../images/girinath.jpg"
 import tantri from '../images/tantrii.jpg'
 import templeSwami from "../images/TempleOG.jpg"
 import sundar from "../images/sundar.jpg"
-
+import p17 from "../images/p17.jpg"
+import p18 from "../images/p18.jpg"
+import p19 from "../images/p19.jpg"
 const TeamMember = ({ name, role, description, image }) => {
   return (
     <div className="w-64 m-4 flex flex-col items-center">
@@ -71,6 +74,11 @@ const ManagementPage = ({ id }) => {
       image: sanjeevaPoojary
     },
     {
+      name: "ಸಂಪತ್ ಕುಮಾರ್ ಶೆಟ್ಟಿ ",
+      role: "ಉಪಾಧ್ಯಕ್ಷರು",
+      image: upadyaksha
+    },
+    {
       name: "ದಯಾನಂದ ಶೆಟ್ಟಿ",
       role: "ಪ್ರಧಾನ ಕಾರ್ಯದರ್ಶಿ",
       image: dayanandaShetty
@@ -90,8 +98,24 @@ const ManagementPage = ({ id }) => {
       name: "ಗಿರಿನಾಥ ಬಾಚಕೆರೆ",
       role: "ಪ್ರಧಾನ ಅರ್ಚಕರು",
       image: girinath
+    },
+    {
+      name: "ಪುರುಷೋತ್ತಮ ಕಾಯರ್ಪಲ್ಕೆ",
+      role: "ಟ್ರಸ್ಟಿ",
+      image: p17
+    }
+    ,{
+      name: "ಭುವನೇಶ್ ಪಚ್ಚಿನಡ್ಕ",
+      role: "ಟ್ರಸ್ಟಿ",
+      image: p19
+    }
+    ,{
+      name: "ಮೋಹನ ಗೌಡ",
+      role: "ಟ್ರಸ್ಟಿ",
+      image: p18
     }
   ];
+
 
   return (
     <div id={id} className="bg-[#fff7e7] w-full min-h-[100vh] pt-20">
