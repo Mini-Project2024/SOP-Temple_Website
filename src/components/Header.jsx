@@ -8,25 +8,34 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   // Scroll to the section and return a Promise that resolves after the scroll is completed
-  const scrollToSection = (id) => {
-    return new Promise((resolve) => {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-        // Wait for a short time to ensure the scroll is complete
-        setTimeout(resolve, 500); // Adjust timing if necessary
-      } else {
-        resolve(); // Resolve immediately if the element is not found
-      }
-    });
-  };
+  // const scrollToSection = (id) => {
+  //   return new Promise((resolve) => {
+  //     const element = document.getElementById(id);
+  //     if (element) {
+  //       element.scrollIntoView({ behavior: "smooth" });
+  //       // Wait for a short time to ensure the scroll is complete
+  //       setTimeout(resolve, 500); // Adjust timing if necessary
+  //     } else {
+  //       resolve(); // Resolve immediately if the element is not found
+  //     }
+  //   });
+  // };
+
+  // const handleClick = (index, id) => {
+  //   // console.log(index + ":" + id);
+  //   setActiveIndex(index);
+  //   scrollToSection(id).then(() => {
+  //     setTimeout(() => setOpen(false), 500); // Close the menu after scrolling
+  //   });
+  // };
 
   const handleClick = (index, id) => {
+    console.log(`Clicked index: ${index}, id: ${id}`);
     setActiveIndex(index);
-    scrollToSection(id).then(() => {
-      setTimeout(() => setOpen(false), 500); // Close the menu after scrolling
-    });
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => setOpen(false), 300);
   };
+  
 
   const toggleMenu = () => {
     setOpen(!open);
