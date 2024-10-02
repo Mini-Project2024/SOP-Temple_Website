@@ -5,7 +5,7 @@ import Chakra from './chakra.svg'
 import templeMarivanige from'./templeMarivanige.jpg';
 import TempleOG from './TempleOG.jpg';
 import templeMain2 from './templeMain2.jpg';
-import TempleMain from './TempleMain.JPG';
+// import TempleMain from './TempleMain.JPG';
 import Ganesha from './ganesha.jpg'
 import pic4 from './pic4.jpg'
 import pooje from './pooje.jpg'
@@ -48,10 +48,10 @@ const images = [
     imgURL: TempleOG,
     imgAlt: "img-5"
   },
-  {
-    imgURL: TempleMain,
-    imgAlt: "img-6"
-  },
+  // {
+  //   imgURL: TempleMain,
+  //   imgAlt: "img-6"
+  // },
   {
      imgURL: pic4,
     imgAlt: "img-7"
