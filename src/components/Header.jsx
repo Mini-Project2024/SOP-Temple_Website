@@ -62,7 +62,7 @@ const Header = () => {
       }}
     >
       <div className="nav-pattern"></div>
-      <div className="logo h-12 w-12 rounded-full">
+      <div className="logo h-12 w-12 rounded-full border-orange-500">
         <img src={logo} alt="Logo" className="h-12 w-12 rounded-full" />
       </div>
 
@@ -160,14 +160,14 @@ const Header = () => {
           >
             ಆಡಳಿತ ಮಂಡಲಿ
           </li>
-          <li
+          {/* <li
             className={`nav-item text-white cursor-pointer ${
               activeIndex === 3 ? "text-blue-900" : ""
             }`}
             onClick={() => handleClick(3, "gallery")}
           >
             ಗ್ಯಾಲರಿ
-          </li>
+          </li> */}
           <li
             className={`nav-item text-white cursor-pointer ${
               activeIndex === 4 ? "text-blue-900" : ""
