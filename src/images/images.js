@@ -24,7 +24,7 @@ import p11 from './11.jpg'
 import p12 from './12.jpg'
 import p13 from './13.jpg'
 import p14 from './14.jpg'
-import p15 from './p15.jpg'
+// import p15 from './p15.jpg'
 import p16 from './p16.jpg'
 
 const images = [
@@ -62,72 +62,64 @@ const images = [
  },
  {
   imgURL: devii,
- imgAlt: "img-9"
-},
-{
-   imgURL: one,
- imgAlt: "img-9"
-},
-{
-  imgURL: two,
-imgAlt: "img-9"
-},
-{
-  imgURL: three,
-imgAlt: "img-9"
-},
-{
-  imgURL: four,
-imgAlt: "img-9"
-},
-{
-  imgURL: p5,
-imgAlt: "img-9"
-},
-{
-  imgURL: p6,
-imgAlt: "img-9"
-},
-{
-  imgURL: p7,
-imgAlt: "img-9"
-},
-{
-  imgURL: p8,
-imgAlt: "img-9"
-},
-{
-  imgURL: p9,
-imgAlt: "img-9"
-},
-{
-  imgURL: p10,
-imgAlt: "img-9"
-},
-{
-  imgURL: p11,
-imgAlt: "img-9"
-},
-{
-  imgURL: p12,
-imgAlt: "img-9"
-},
-{
-  imgURL: p13,
-imgAlt: "img-9"
-},
-{
-  imgURL: p14,
-imgAlt: "img-9"
-},
-{
-  imgURL: p15,
-imgAlt: "img-9"
-},
-{
-  imgURL: p16,
-imgAlt: "img-9"
-}
+  imgAlt: "img-10"
+  },
+  {
+    imgURL: one,
+  imgAlt: "img-11"
+  },
+  {
+    imgURL: two,
+  imgAlt: "img-12"
+  },
+  {
+    imgURL: three,
+  imgAlt: "img-13"
+  },
+  {
+    imgURL: four,
+  imgAlt: "img-14"
+  },
+  {
+    imgURL: p5,
+  imgAlt: "img-15"
+  },
+  {
+    imgURL: p6,
+  imgAlt: "img-16"
+  },
+  {
+    imgURL: p7,
+  imgAlt: "img-17"
+  },
+  {
+    imgURL: p8,
+  imgAlt: "img-18"
+  },
+  {
+    imgURL: p9,
+  imgAlt: "img-19"
+  },
+  {
+    imgURL: p10,
+  imgAlt: "img-20"
+  },
+  {
+    imgURL: p11,
+  imgAlt: "img-21"
+  },
+  {
+    imgURL: p12,
+  imgAlt: "img-22"
+  },
+  {
+    imgURL: p13,
+  imgAlt: "img-23"
+  },
+  {
+    imgURL: p14,
+  imgAlt: "img-24"
+  }
 ];
 
 export default images;
