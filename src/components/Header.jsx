@@ -24,7 +24,7 @@ const Header = () => {
   const handleClick = (index, id) => {
     setActiveIndex(index);
     scrollToSection(id).then(() => {
-      setOpen(false); // Close the menu after scrolling
+      setTimeout(() => setOpen(false), 500); // Close the menu after scrolling
     });
   };
 
