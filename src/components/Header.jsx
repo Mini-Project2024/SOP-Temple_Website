@@ -29,13 +29,22 @@ const Header = () => {
   //   });
   // };
 
+  const forceUpdate = () => setActiveIndex(null);
+  
   const handleClick = (index, id) => {
-    console.log(`Clicked index: ${index}, id: ${id}`);
+    // If the gallery is clicked, force update
+    if (index === 3) { // Assuming index 3 corresponds to Gallery
+      forceUpdate();
+    }
     setActiveIndex(index);
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-    setTimeout(() => setOpen(false), 300);
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setOpen(false); // Close the menu immediately
   };
   
+
 
   const toggleMenu = () => {
     setOpen(!open);
